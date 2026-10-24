@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="feed.xml">
+  {% include "_style.html.j2" %}
+</head>
+<body>
+<main>
+  <div class="kicker">Disney Lorcana weekly</div>
+  <h1>{{ site.title }}</h1>
+  <p class="muted">Tournament results, news and community highlights, summarized each week. <a href="feed.xml">RSS feed</a></p>
+  {% for e in entries %}
+  <div class="card">
+    <div class="muted">{{ e.start }} – {{ e.end }}</div>
+    <h3><a href="{{ e.href }}">{{ e.title }}</a></h3>
+    {% if e.summary %}<ul class="bullets">{% for s in e.summary[:3] %}<li>{{ s }}</li>{% endfor %}</ul>{% endif %}
+  </div>
+  {% else %}
+  <p>No digests yet.</p>
+  {% endfor %}
+</main>
+</body>
+</html>

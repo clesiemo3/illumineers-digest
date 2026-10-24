@@ -1,0 +1,44 @@
+# Which sources the digest pulls from and how far back it looks.
+
+site:
+  title: Ilumineers Digest
+  # Public URL where site/ is served. Used for links in the RSS feed.
+  base_url: https://example.com/lorcana
+
+window:
+  # News, Reddit, Bluesky, YouTube and inbox items from the last N days.
+  days: 7
+  # Lorcanahunter publishes decklists a week or two after events, so
+  # tournaments use a longer window.
+  tournament_days: 14
+
+tournaments:
+  # Only events with published decklists are listed. Pages hold 25 events each.
+  max_pages: 4
+  min_players: 16
+
+reddit:
+  subreddits: [Lorcana]
+  limit: 25
+
+web_search:
+  enabled: true
+  max_searches: 8
+  # Sites Claude should check for news. It may still search more broadly.
+  focus:
+    - disneylorcana.com
+    - ravensburger.com
+    - lorcanaplayer.com
+    - dotesports.com
+    - si.com/esports/lorcana
+    - x.com (major stories only)
+
+claude:
+  # claude-code: runs through the Claude Code CLI on your Claude subscription.
+  # api: uses the Anthropic API with ANTHROPIC_API_KEY, billed per token.
+  backend: claude-code
+  # Model for the api backend.
+  model: claude-opus-5-5
+  # Model for the claude-code backend: an alias such as opus or sonnet, or
+  # blank to use your plan's default.
+  claude_code_model: ""

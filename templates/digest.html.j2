@@ -1,0 +1,103 @@
+{% macro inks(names) %}<span class="inks" title="{{ names|join('/') }}">{% for n in names %}<span class="ink ink-{{ n }}"></span>{% endfor %}</span>{% endmacro %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }} · {{ data.end.strftime('%b %-d, %Y') }}</title>
+  <meta name="description" content="{{ summary.headline if summary else 'Lorcana weekly digest' }}">
+  {% include "_style.html.j2" %}
+</head>
+<body>
+<main>
+  <div class="kicker">{{ site.title }} · {{ data.start.strftime('%b %-d') }} – {{ data.end.strftime('%b %-d, %Y') }}</div>
+  {% if summary %}
+  <h1>{{ summary.headline }}</h1>
+  {% else %}
+  <h1>This week in Lorcana</h1>
+  <p class="notice">This digest was built without AI summaries. It lists the raw tournament results and links.</p>
+  {% endif %}
+
+  {% for section in sections %}
+  <h2>{{ section.title }}</h2>
+  <ul class="bullets">
+    {% for b in section.bullets %}
+    <li>{{ b.text }}{% for r in b.refs %}<sup><a href="#src-{{ r.n }}" title="{{ r.title }}">[{{ r.n }}]</a></sup>{% endfor %}</li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+
+  {% if data.tournaments %}
+  <h2>Tournament results</h2>
+  <p class="muted">{{ data.tournaments|length }} events with published decklists, via <a href="https://lorcanahunter.com/en/past-events">Lorcanahunter</a>. Decklists usually appear a week or two after an event, so this covers a longer period than the news.</p>
+
+  {% if pairs %}
+  <h3>Ink pairs on the podium</h3>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Deck</th><th class="num">Wins</th><th class="num">Top 3s</th><th class="num">Events</th></tr>
+    {% for p in pairs %}
+    <tr><td>{{ inks(p.inks) }} {{ p.label }}</td><td class="num">{{ p.wins }}</td><td class="num">{{ p.podiums }}</td><td class="num">{{ p.events|length }}</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+  {% endif %}
+
+  {% if players %}
+  <h3 style="margin-top:20px">Players with more than one top 3</h3>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Player</th><th class="num">Wins</th><th class="num">Top 3s</th></tr>
+    {% for p in players %}
+    <tr><td>{{ p.name }}</td><td class="num">{{ p.wins }}</td><td class="num">{{ p.podiums }}</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+  {% endif %}
+
+  <h3 style="margin-top:20px">Events</h3>
+  {% for t in data.tournaments %}
+  <div class="card" id="{{ t.id }}">
+    <h3><a href="{{ t.url }}">{{ t.name }}</a></h3>
+    <div class="muted">{{ t.date.strftime('%a %b %-d') }} · {{ t.location }} · {{ t.players }} players{% if t.tier %} · {{ t.tier }}{% endif %}</div>
+    {% if t.podium %}
+    <ol class="podium">
+      {% for p in t.podium %}
+      <li>{{ inks(p.inks|sort) }} <a href="{{ p.deck_url }}">{{ p.player }}</a> <span class="muted">{{ p.inks|sort|join("/") }}</span></li>
+      {% endfor %}
+    </ol>
+    {% endif %}
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  {% if uncited %}
+  <h2>{{ 'More links' if summary else 'Links this week' }}</h2>
+  <ul class="bullets">
+    {% for i in uncited %}
+    <li><span class="tag">{{ i.source }}</span><a href="{{ i.url }}">{{ i.title }}</a>{% if i.author %} <span class="muted">· {{ i.author }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if sources %}
+  <h2>Sources</h2>
+  <ol class="sources">
+    {% for s in sources %}
+    <li id="src-{{ s.n }}"><span class="tag">{{ s.kind }}</span><a href="{{ s.url }}">{{ s.title }}</a></li>
+    {% endfor %}
+  </ol>
+  {% endif %}
+
+  <footer>
+    Summaries written by Claude from the linked sources. Follow the links before relying on a detail.
+    Generated {{ generated.strftime('%Y-%m-%d %H:%M UTC') }}. <a href="../index.html">All digests</a>
+    {% if data.errors %}
+    <details><summary>{{ data.errors|length }} source(s) failed this run</summary>
+      <ul>{% for e in data.errors %}<li>{{ e }}</li>{% endfor %}</ul>
+    </details>
+    {% endif %}
+  </footer>
+</main>
+</body>
+</html>

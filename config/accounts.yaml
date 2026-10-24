@@ -1,0 +1,85 @@
+# People and outlets worth tracking. Add a line per account.
+#
+# role: competitive | pro_player | creator | official | news
+#   Posts from competitive, pro_player and official accounts are flagged as
+#   higher priority when Claude writes the digest.
+# bluesky: handle without the @ (e.g. someone.bsky.social). Read every run.
+# youtube_channel_id: the UC... id (find it in the page source of the
+#    channel's @handle page as "externalId"). Read every run via RSS.
+# x: handle without the @. Not fetched (no X API); Claude's web search uses
+#    these names to recognize notable X posts.
+#
+# Leave a field out if the account isn't on that platform.
+
+accounts:
+  # --- Competitive content ---------------------------------------------------
+  - name: Illumineer Champions League
+    role: competitive
+    youtube_channel_id: UC6KicfVcqOmPK2JvcQdprqQ   # @IllumineerChampionsLeague
+  - name: Rules of Villainy Podcast
+    role: competitive
+    youtube_channel_id: UCY3lW8wYIQ6fd7RCQHk31_Q   # @RulesofVillainy
+  - name: JDZ Quest
+    role: competitive
+    youtube_channel_id: UCixME3fElc8D28MZmTQuDMQ   # @JDZQuest
+  - name: JBaum
+    role: competitive
+    youtube_channel_id: UCL6iljGfp0B1TVWkB_NUEWg   # @JBaumTCG
+  - name: Additional Ink
+    role: competitive
+    youtube_channel_id: UCRm8SW3KYMe0B8pACpZhk3Q   # @AdditionalInk
+  - name: Manifest TCG
+    role: competitive
+    youtube_channel_id: UClW6lifurQHcDiZwx9ReoQA   # @TCGManifest
+  - name: The Lorcana Cookout
+    role: competitive
+    youtube_channel_id: UCc-tBMA0IGECob2Sjo2SwqQ   # @TheLorcanaCookout
+  - name: Podcana Podcast
+    role: competitive
+    youtube_channel_id: UCrHlKLpTNaJ5WzOvLZA-evg   # @podcanapodcast
+  - name: Zan Syed
+    role: competitive
+    youtube_channel_id: UCzBbhYrk9quifEsIQbDj-xA   # @ZanSyedYT
+  - name: Grapesduo
+    role: competitive
+    youtube_channel_id: UCAp0eya_yGB8ktZ-PofQgOA   # @GrapesDuo322
+  - name: Zach Bivens
+    role: competitive
+    youtube_channel_id: UCjztsgVZw98KkJPupRV-ejA   # @ZachBivens1
+  - name: Garrick
+    role: competitive
+    youtube_channel_id: UCZvEmj9GC0T3-D0QKX8mqyA   # @TCGarrick
+  - name: ThatMoKid
+    role: competitive
+    youtube_channel_id: UCsCMNbY5siSz3DvehVXud6Q   # @ThatMoKid
+  - name: Lorcana Villain
+    role: competitive
+    youtube_channel_id: UCU_QCY4c_k9WEw-uA6kw35g
+
+  # --- Content creators ------------------------------------------------------
+  - name: Brent Mukai
+    role: creator
+    youtube_channel_id: UCPF7t56EGmJRF0gIBgtnoQA   # @BrentMukai
+  - name: Brent Mukai Lorcana
+    role: creator
+    youtube_channel_id: UCCSwTdOFbjVBC9ygEbXZYaQ   # @BrentMukaiLorcana
+  - name: The Lore College
+    role: creator
+    youtube_channel_id: UC2_f7lxjvi2GJBrQij22T4w   # @thelorecollege
+  - name: The Mad Drafter
+    role: creator
+    youtube_channel_id: UCzHVeHRM5mG8Mw6tExTUoFg   # @themaddrafter
+  - name: Rebekah Quests
+    role: creator
+    youtube_channel_id: UCOQS7NxpCbmAZzMFt2T5h9w   # @RebekahQuests
+  - name: Lorcana Goons
+    role: creator
+    youtube_channel_id: UCqVv7rq9PGTJC5GbEbtgodA
+  - name: The Illumiteers
+    role: creator
+    youtube_channel_id: UChdIs1fGi3VYeVUBv_wdb-Q
+
+  # --- Official --------------------------------------------------------------
+  - name: Disney Lorcana TCG
+    role: official
+    youtube_channel_id: UCd7dQLqtmngtF-6cir27PtA   # @DisneyLorcana

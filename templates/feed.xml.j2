@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>{{ site.title }}</title>
+  <link>{{ site.base_url }}/</link>
+  <description>Weekly Disney Lorcana tournament results, news and community highlights.</description>
+  <lastBuildDate>{{ updated }}</lastBuildDate>
+  {% for e in entries %}
+  <item>
+    <title>{{ e.title }}</title>
+    <link>{{ site.base_url }}/{{ e.href }}</link>
+    <guid>{{ site.base_url }}/{{ e.href }}</guid>
+    <pubDate>{{ e.published }}</pubDate>
+    <description>{{ e.summary|join(' • ') }}</description>
+  </item>
+  {% endfor %}
+</channel>
+</rss>
