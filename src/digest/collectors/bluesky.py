@@ -65,14 +65,29 @@ def _add(items, seen, post, since, author="", priority=False):
     seen.add(uri)
     handle = post["author"]["handle"]
     text = post["record"].get("text", "")
+    post_url = f"https://bsky.app/profile/{handle}/post/{uri.rsplit('/', 1)[-1]}"
+    # If the post links out (e.g. inkdecks linking an event page), cite that page
+    # so readers land on the source, and keep the post link in the text.
+    link = _outbound_link(post)
     items.append(
         Item(
             source="bluesky",
             title=text.split("\n", 1)[0][:120] or "(post)",
-            url=f"https://bsky.app/profile/{handle}/post/{uri.rsplit('/', 1)[-1]}",
+            url=link or post_url,
             author=author or post["author"].get("displayName") or handle,
             published=created,
-            text=f"{text}\n[{post.get('likeCount', 0)} likes, {post.get('replyCount', 0)} replies]",
+            text=f"{text}\n[{post.get('likeCount', 0)} likes, {post.get('replyCount', 0)} replies"
+            + (f"; Bluesky post: {post_url}]" if link else "]"),
             priority=priority,
         )
     )
+
+
+def _outbound_link(post) -> str | None:
+    """First full URL a post links to (link facets hold it untruncated), else its link card."""
+    for facet in post["record"].get("facets", []):
+        for feature in facet.get("features", []):
+            if feature.get("uri", "").startswith("http"):
+                return feature["uri"]
+    external = (post.get("embed") or {}).get("external") or {}
+    return external.get("uri") or None

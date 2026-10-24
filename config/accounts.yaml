@@ -79,6 +79,13 @@ accounts:
     role: creator
     youtube_channel_id: UChdIs1fGi3VYeVUBv_wdb-Q
 
+  # --- Results and news ------------------------------------------------------
+  # inkdecks posts one Bluesky post per event (winner, deck, player count) with
+  # a link to the event page. Quiet since June 2026; picked up if it resumes.
+  - name: inkdecks
+    role: news
+    bluesky: inkdecks.com
+
   # --- Official --------------------------------------------------------------
   - name: Disney Lorcana TCG
     role: official
