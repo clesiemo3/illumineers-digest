@@ -1,346 +1,90 @@
 {
  "start": "2026-10-17",
  "end": "2026-10-24",
- "tournaments": [
-  {
-   "id": "t-1",
-   "name": "Uninkables Masters Tournament II",
-   "url": "https://lorcanahunter.com/tournament/17171/jolly-joker-srl-uninkables-masters-tournament-ii",
-   "date": "2026-10-11",
-   "location": "🇮🇹 Torino · Jolly Joker srl",
-   "tier": "CORE",
-   "players": 64,
-   "decklists": 62,
-   "podium": [
-    {
-     "rank": 1,
-     "player": "_MILQ_SirGrima",
-     "inks": [
-      "Amber",
-      "Emerald"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17171/jolly-joker-srl-uninkables-masters-tournament-ii/player/192345/deck"
-    },
-    {
-     "rank": 2,
-     "player": "_MILQ_Rama",
-     "inks": [
-      "Steel",
-      "Emerald"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17171/jolly-joker-srl-uninkables-masters-tournament-ii/player/192348/deck"
-    },
-    {
-     "rank": 3,
-     "player": "ZTL_Utini",
-     "inks": [
-      "Emerald",
-      "Amber"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17171/jolly-joker-srl-uninkables-masters-tournament-ii/player/192337/deck"
-    }
-   ],
-   "meta": [
-    {
-     "inks": [
-      "Amethyst",
-      "Amber"
-     ],
-     "pct": 25.8,
-     "decks": 16
-    },
-    {
-     "inks": [
-      "Amber",
-      "Emerald"
-     ],
-     "pct": 24.2,
-     "decks": 15
-    },
-    {
-     "inks": [
-      "Emerald",
-      "Steel"
-     ],
-     "pct": 11.3,
-     "decks": 7
-    }
-   ]
-  },
-  {
-   "id": "t-2",
-   "name": "$1,000 Cauldron Cup Runback",
-   "url": "https://lorcanahunter.com/tournament/17172/impact-gaming-center-1-000-cauldron-cup-runback",
-   "date": "2026-10-11",
-   "location": "🇺🇸 Fairview Heights · Impact Gaming Center",
-   "tier": "CORE",
-   "players": 33,
-   "decklists": 32,
-   "podium": [
-    {
-     "rank": 1,
-     "player": "Troy",
-     "inks": [
-      "Amethyst",
-      "Amber"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17172/impact-gaming-center-1-000-cauldron-cup-runback/player/192445/deck"
-    },
-    {
-     "rank": 2,
-     "player": "Illumineer_Of_Fortune",
-     "inks": [
-      "Amethyst",
-      "Steel"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17172/impact-gaming-center-1-000-cauldron-cup-runback/player/192411/deck"
-    },
-    {
-     "rank": 3,
-     "player": "LoL Jeff",
-     "inks": [
-      "Amethyst",
-      "Amber"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17172/impact-gaming-center-1-000-cauldron-cup-runback/player/192429/deck"
-    }
-   ],
-   "meta": [
-    {
-     "inks": [
-      "Amber",
-      "Emerald"
-     ],
-     "pct": 25.0,
-     "decks": 8
-    },
-    {
-     "inks": [
-      "Amethyst",
-      "Amber"
-     ],
-     "pct": 18.8,
-     "decks": 6
-    },
-    {
-     "inks": [
-      "Emerald",
-      "Steel"
-     ],
-     "pct": 15.6,
-     "decks": 5
-    }
-   ]
-  },
-  {
-   "id": "t-3",
-   "name": "CCQ Sevilla [10 y 11 Octubre]",
-   "url": "https://lorcanahunter.com/tournament/17167/empire-games-ccq-sevilla-10-y-11-octubre",
-   "date": "2026-10-10",
-   "location": "🇪🇸 Sevilla · Empire Games",
-   "tier": "CCQ",
-   "players": 142,
-   "decklists": 138,
-   "podium": [
-    {
-     "rank": 1,
-     "player": "Idril",
-     "inks": [
-      "Amber",
-      "Emerald"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17167/empire-games-ccq-sevilla-10-y-11-octubre/player/191878/deck"
-    },
-    {
-     "rank": 2,
-     "player": "Mushuu Muchacho",
-     "inks": [
-      "Amber",
-      "Emerald"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17167/empire-games-ccq-sevilla-10-y-11-octubre/player/191925/deck"
-    },
-    {
-     "rank": 3,
-     "player": "PT_GuЯu 🚀",
-     "inks": [
-      "Amber",
-      "Emerald"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17167/empire-games-ccq-sevilla-10-y-11-octubre/player/191917/deck"
-    }
-   ],
-   "meta": [
-    {
-     "inks": [
-      "Amber",
-      "Emerald"
-     ],
-     "pct": 33.3,
-     "decks": 46
-    },
-    {
-     "inks": [
-      "Amethyst",
-      "Amber"
-     ],
-     "pct": 24.6,
-     "decks": 34
-    },
-    {
-     "inks": [
-      "Emerald",
-      "Steel"
-     ],
-     "pct": 12.3,
-     "decks": 17
-    }
-   ]
-  },
-  {
-   "id": "t-4",
-   "name": "The Cauldron Cup CCQ - $5,000 Challenge Championship Qualifier",
-   "url": "https://lorcanahunter.com/tournament/17168/impact-gaming-center-the-cauldron-cup-ccq-5-000-challenge-championship-qualifier",
-   "date": "2026-10-10",
-   "location": "🇺🇸 Fairview Heights · Impact Gaming Center",
-   "tier": "CCQ",
-   "players": 138,
-   "decklists": 137,
-   "podium": [
-    {
-     "rank": 1,
-     "player": "Fetty Guap",
-     "inks": [
-      "Emerald",
-      "Amethyst"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17168/impact-gaming-center-the-cauldron-cup-ccq-5-000-challenge-championship-qualifier/player/192106/deck"
-    },
-    {
-     "rank": 2,
-     "player": "PidgeyPotPie",
-     "inks": [
-      "Emerald",
-      "Amber"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17168/impact-gaming-center-the-cauldron-cup-ccq-5-000-challenge-championship-qualifier/player/192121/deck"
-    },
-    {
-     "rank": 3,
-     "player": "? James Gray II",
-     "inks": [
-      "Emerald",
-      "Steel"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17168/impact-gaming-center-the-cauldron-cup-ccq-5-000-challenge-championship-qualifier/player/192134/deck"
-    }
-   ],
-   "meta": [
-    {
-     "inks": [
-      "Amber",
-      "Emerald"
-     ],
-     "pct": 27.0,
-     "decks": 37
-    },
-    {
-     "inks": [
-      "Emerald",
-      "Steel"
-     ],
-     "pct": 19.0,
-     "decks": 26
-    },
-    {
-     "inks": [
-      "Amethyst",
-      "Amber"
-     ],
-     "pct": 14.6,
-     "decks": 20
-    }
-   ]
-  },
-  {
-   "id": "t-5",
-   "name": "Lore Seekers League: Trials of the Illuminary — Season I Championship",
-   "url": "https://lorcanahunter.com/tournament/17170/cardboard-games-lore-seekers-league-trials-of-the-illuminary-season-i-championship",
-   "date": "2026-10-10",
-   "location": "🇺🇸 #102 · Cardboard Games",
-   "tier": "CORE",
-   "players": 32,
-   "decklists": 32,
-   "podium": [
-    {
-     "rank": 1,
-     "player": "GoofyBoy",
-     "inks": [
-      "Emerald",
-      "Amber"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17170/cardboard-games-lore-seekers-league-trials-of-the-illuminary-season-i-championship/player/192285/deck"
-    },
-    {
-     "rank": 2,
-     "player": "Lorcanaholic",
-     "inks": [
-      "Amethyst",
-      "Amber"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17170/cardboard-games-lore-seekers-league-trials-of-the-illuminary-season-i-championship/player/192299/deck"
-    },
-    {
-     "rank": 3,
-     "player": "RyanL",
-     "inks": [
-      "Emerald",
-      "Amber"
-     ],
-     "deck_url": "https://lorcanahunter.com/tournament/17170/cardboard-games-lore-seekers-league-trials-of-the-illuminary-season-i-championship/player/192298/deck"
-    }
-   ],
-   "meta": [
-    {
-     "inks": [
-      "Amber",
-      "Emerald"
-     ],
-     "pct": 34.4,
-     "decks": 11
-    },
-    {
-     "inks": [
-      "Amethyst",
-      "Amber"
-     ],
-     "pct": 21.9,
-     "decks": 7
-    },
-    {
-     "inks": [
-      "Amber",
-      "Steel"
-     ],
-     "pct": 9.4,
-     "decks": 3
-    }
-   ]
-  }
- ],
+ "tournaments": [],
  "items": [
   {
-   "id": "reddit-1",
-   "source": "reddit",
-   "title": "Crazy Enchanted Misprint from a Hyperia City Trove!",
-   "url": "https://www.reddit.com/r/Lorcana/comments/1x8j3y7/crazy_enchanted_misprint_from_a_hyperia_city_trove/",
-   "author": "C0nquers",
-   "published": "2026-10-17T19:35:57Z",
-   "text": "Crazy foil shift on this ariel enchanted from a trove, any ideas what something like this might go for?",
+   "id": "inkdecks-1",
+   "source": "inkdecks",
+   "title": "Through The Decades CCQ Infinity 5K - Swiss Standings @ Through The Decades Sports Cards & Gaming",
+   "url": "https://inkdecks.com/lorcana-tournaments/through-the-decades-ccq-infinity-5k-swiss-standings-tournament-decks-364358",
+   "author": "inkdecks",
+   "published": "2026-10-24T00:00:00Z",
+   "text": "Event on October 24, 2026 in US, 79 players. Winner: Darian with a deck titled “Cortisol Down, Paws Up”.",
    "priority": false
   },
   {
-   "id": "reddit-2",
+   "id": "inkdecks-2",
+   "source": "inkdecks",
+   "title": "Heroes Ink: “Chapter 14 - Page 1” @ Heroes Ink x Heroes INN",
+   "url": "https://inkdecks.com/lorcana-tournaments/heroes-ink-chapter-14-page-1-tournament-decks-364357",
+   "author": "inkdecks",
+   "published": "2026-10-24T00:00:00Z",
+   "text": "Event on October 24, 2026 in DE, 36 players. Winner: TT_Egelim with a deck titled “Makoya 0-3”.",
+   "priority": false
+  },
+  {
+   "id": "inkdecks-3",
+   "source": "inkdecks",
+   "title": "Inker Belles' Halloween Event @ Inker Belles",
+   "url": "https://inkdecks.com/lorcana-tournaments/inker-belles-halloween-event-tournament-decks-364354",
+   "author": "inkdecks",
+   "published": "2026-10-24T00:00:00Z",
+   "text": "Event on October 24, 2026 in NO, 10 players. Winner: Drakeblood with a deck titled “The Purple Villains Association”.",
+   "priority": false
+  },
+  {
+   "id": "inkdecks-4",
+   "source": "inkdecks",
+   "title": "Kuopio Pelaa: Grand Illumineer @ Kuopio Pelaa",
+   "url": "https://inkdecks.com/lorcana-tournaments/kuopio-pelaa-grand-illumineer-tournament-decks-364353",
+   "author": "inkdecks",
+   "published": "2026-10-17T00:00:00Z",
+   "text": "Event on October 17, 2026 in FI, 19 players. Winner: Xboom with a deck titled “Metanor”.",
+   "priority": false
+  },
+  {
+   "id": "inkdecks-5",
+   "source": "inkdecks",
+   "title": "Hyperia City Weekly Play @ Gemini Games",
+   "url": "https://inkdecks.com/lorcana-tournaments/hyperia-city-weekly-play-tournament-decks-364351",
+   "author": "inkdecks",
+   "published": "2026-10-21T00:00:00Z",
+   "text": "Event on October 21, 2026 in GB, 8 players. Winner: Liam Dolecki with a deck titled “S14 You Get 3 Wishes”.",
+   "priority": false
+  },
+  {
+   "id": "inkdecks-6",
+   "source": "inkdecks",
+   "title": "Mont Set Championship Wilds Unknown @ Mont Card Shop",
+   "url": "https://inkdecks.com/lorcana-tournaments/mont-set-championship-wilds-unknown-tournament-decks-364350",
+   "author": "inkdecks",
+   "published": "2026-10-17T00:00:00Z",
+   "text": "Event on October 17, 2026 in BR, 41 players. Winner: MatheusCebolas with a deck titled “Amber Amethyst”.",
+   "priority": false
+  },
+  {
+   "id": "inkdecks-7",
+   "source": "inkdecks",
+   "title": "POORCANA - aMai TCG @ aMai Games",
+   "url": "https://inkdecks.com/lorcana-tournaments/poorcana-amai-tcg-tournament-decks-364349",
+   "author": "inkdecks",
+   "published": "2026-10-18T00:00:00Z",
+   "text": "Event on October 18, 2026 in BR, 13 players. Winner: VICTOR MIRANDA with a deck titled “Porcana - RA Mid”.",
+   "priority": false
+  },
+  {
+   "id": "inkdecks-8",
+   "source": "inkdecks",
+   "title": "Quest World Iconic Clash @ Quest World Productions",
+   "url": "https://inkdecks.com/lorcana-tournaments/quest-world-iconic-clash-tournament-decks-364347",
+   "author": "inkdecks",
+   "published": "2026-10-17T00:00:00Z",
+   "text": "Event on October 17, 2026 in US, 16 players. Winner: Edmond Chiu -- EdLorcana with a deck titled “Emerald / Steel”.",
+   "priority": false
+  },
+  {
+   "id": "reddit-1",
    "source": "reddit",
    "title": "Perfect for the Ofrenda",
    "url": "https://www.reddit.com/r/Lorcana/comments/1xdg7gw/perfect_for_the_ofrenda/",
@@ -350,7 +94,7 @@
    "priority": false
   },
   {
-   "id": "reddit-3",
+   "id": "reddit-2",
    "source": "reddit",
    "title": "I guess this is it?",
    "url": "https://www.reddit.com/r/Lorcana/comments/1x9gfib/i_guess_this_is_it/",
@@ -360,7 +104,7 @@
    "priority": false
   },
   {
-   "id": "reddit-4",
+   "id": "reddit-3",
    "source": "reddit",
    "title": "What is the most effective way to report an LGS to Ravensburger for bad practices?",
    "url": "https://www.reddit.com/r/Lorcana/comments/1x8yv9q/what_is_the_most_effective_way_to_report_an_lgs/",
@@ -370,7 +114,7 @@
    "priority": false
   },
   {
-   "id": "reddit-5",
+   "id": "reddit-4",
    "source": "reddit",
    "title": "Love to see it at Hyperia releases at essentially MSRP",
    "url": "https://www.reddit.com/r/Lorcana/comments/1xde6gx/love_to_see_it_at_hyperia_releases_at_essentially/",
@@ -380,7 +124,7 @@
    "priority": false
   },
   {
-   "id": "reddit-6",
+   "id": "reddit-5",
    "source": "reddit",
    "title": "Lorcana Quest of Wonders at Disneyland",
    "url": "https://www.reddit.com/r/Lorcana/comments/1xb57fw/lorcana_quest_of_wonders_at_disneyland/",
@@ -390,13 +134,23 @@
    "priority": false
   },
   {
-   "id": "reddit-7",
+   "id": "reddit-6",
    "source": "reddit",
    "title": "Beast Gift Set Packs",
    "url": "https://www.reddit.com/r/Lorcana/comments/1x9ioo3/beast_gift_set_packs/",
    "author": "Generazn",
    "published": "2026-10-19T00:21:50Z",
    "text": "",
+   "priority": false
+  },
+  {
+   "id": "reddit-7",
+   "source": "reddit",
+   "title": "New Into the Inkdark card!",
+   "url": "https://www.reddit.com/r/Lorcana/comments/1xec2bs/new_into_the_inkdark_card/",
+   "author": "Maikenvv",
+   "published": "2026-10-24T15:49:18Z",
+   "text": "Source: https://www.instagram.com/p/De4ddwWivbd/",
    "priority": false
   },
   {
@@ -452,21 +206,21 @@
   {
    "id": "reddit-13",
    "source": "reddit",
-   "title": "What happened with Dr Facilier?",
-   "url": "https://www.reddit.com/r/Lorcana/comments/1x9ssk3/what_happened_with_dr_facilier/",
-   "author": "Foxtrot_Dementia",
-   "published": "2026-10-19T10:01:11Z",
-   "text": "I am just wondering why we didn't get any card from him since set 2, he's an iconic villain with a lot possibilities and I think a chance was missed this set, perhaps on next one that will be more heavy on villains. Any other character that you particular miss that you haven't seen in a Big while?",
-   "priority": false
-  },
-  {
-   "id": "reddit-14",
-   "source": "reddit",
    "title": "Does the word 'Counter' being too bottom-aligned in its little spot bug anyone else or is it just me?",
    "url": "https://www.reddit.com/r/Lorcana/comments/1xazz9p/does_the_word_counter_being_too_bottomaligned_in/",
    "author": "blueeetherabbit",
    "published": "2026-10-20T18:25:12Z",
    "text": "God I know people are gonna downvote me for caring about something so small but whatever bring it on lol The designer part of me looked at that and I was like there's no way they shipped an error, so it's gotta be intentional?",
+   "priority": false
+  },
+  {
+   "id": "reddit-14",
+   "source": "reddit",
+   "title": "What happened with Dr Facilier?",
+   "url": "https://www.reddit.com/r/Lorcana/comments/1x9ssk3/what_happened_with_dr_facilier/",
+   "author": "Foxtrot_Dementia",
+   "published": "2026-10-19T10:01:11Z",
+   "text": "I am just wondering why we didn't get any card from him since set 2, he's an iconic villain with a lot possibilities and I think a chance was missed this set, perhaps on next one that will be more heavy on villains. Any other character that you particular miss that you haven't seen in a Big while?",
    "priority": false
   },
   {
@@ -492,16 +246,6 @@
   {
    "id": "reddit-17",
    "source": "reddit",
-   "title": "New Into the Inkdark card!",
-   "url": "https://www.reddit.com/r/Lorcana/comments/1xec2bs/new_into_the_inkdark_card/",
-   "author": "Maikenvv",
-   "published": "2026-10-24T15:49:18Z",
-   "text": "Source: https://www.instagram.com/p/De4ddwWivbd/",
-   "priority": false
-  },
-  {
-   "id": "reddit-18",
-   "source": "reddit",
    "title": "First Lorcana Deck",
    "url": "https://www.reddit.com/r/Lorcana/comments/1xa65i6/first_lorcana_deck/",
    "author": "Mammoth-Attention820",
@@ -510,7 +254,7 @@
    "priority": false
   },
   {
-   "id": "reddit-19",
+   "id": "reddit-18",
    "source": "reddit",
    "title": "Jumbo",
    "url": "https://www.reddit.com/r/Lorcana/comments/1x9ljxs/jumbo/",
@@ -520,17 +264,7 @@
    "priority": false
   },
   {
-   "id": "reddit-20",
-   "source": "reddit",
-   "title": "Initial results from the pulls tracker!",
-   "url": "https://www.reddit.com/r/Lorcana/comments/1x8jhnu/initial_results_from_the_pulls_tracker/",
-   "author": "Narzghal",
-   "published": "2026-10-17T19:52:04Z",
-   "text": "Still some smoothing out to do as we get data in, we're still less half the amount of packs opened for Hyperia as compared to Wilds. But looking like the rates are the same, which shouldn't be a shocker. Make sure to report your pulls, and tell your friends! Check out my snazzy new website, where you can see everything live and report in just a few clicks! Thanks everyone, and good luck! lorcanapullrates.ink https://preview.redd.it/06sm6rpw03wh1.png?width=698&format=png&auto=webp&s=9182cc479e2843c8c895dc2cea33900f88df18ad",
-   "priority": false
-  },
-  {
-   "id": "reddit-21",
+   "id": "reddit-19",
    "source": "reddit",
    "title": "Flash is busted",
    "url": "https://www.reddit.com/r/Lorcana/comments/1xbj046/flash_is_busted/",
@@ -540,7 +274,7 @@
    "priority": false
   },
   {
-   "id": "reddit-22",
+   "id": "reddit-20",
    "source": "reddit",
    "title": "Max Goof",
    "url": "https://www.reddit.com/r/Lorcana/comments/1xca6bj/max_goof/",
@@ -550,7 +284,7 @@
    "priority": false
   },
   {
-   "id": "reddit-23",
+   "id": "reddit-21",
    "source": "reddit",
    "title": "Odd spot on Hector epic",
    "url": "https://www.reddit.com/r/Lorcana/comments/1x9dwk9/odd_spot_on_hector_epic/",
@@ -560,7 +294,7 @@
    "priority": false
   },
   {
-   "id": "reddit-24",
+   "id": "reddit-22",
    "source": "reddit",
    "title": "Necro Princesses Set 14",
    "url": "https://www.reddit.com/r/Lorcana/comments/1xcyn0v/necro_princesses_set_14/",
@@ -570,13 +304,33 @@
    "priority": false
   },
   {
-   "id": "reddit-25",
+   "id": "reddit-23",
+   "source": "reddit",
+   "title": "Lorcana opening feeling",
+   "url": "https://www.reddit.com/r/Lorcana/comments/1xcoo14/lorcana_opening_feeling/",
+   "author": "Lg_Unit",
+   "published": "2026-10-22T17:16:51Z",
+   "text": "Hey all, Just wanted to share a bit my experience and also ask a question. We started collecting Lorcana with my GF since Vine set. For Hyperia city we have bought 1 display of 24 boosters for each of us. We were a bit disappointed by some point that next to other TCG feels a bit underwhelming : - We were very surprised to found out 3 boosters of each of our display were strictly identical concerning the 5-6 first cards (same cards same order, between boosters from my and her display). The probability of this happening on three pairs of boosters between our 2 display is infinitesimal and so let us think that there is predefined « set of cards » for the first common cards —> kind of break the idea of opening packs. Can you confirm ? - we got 0 enchanted with 2 displays, coming from MTG and pokémon it feels very poor to have not a single rarity above rare / very rare guaranteed. Those don’t have specific treatment / graphics. Epic are bit of a fraud and Legendary not foil 3/4 out of the time - I perfectly know that opening packs is not to have value. Just buy the card you want if you want money efficiency. But here damn it feels very poor for 240€ spent ! Never had this feeling even for opening a hobbit collector display and finishing with half value of what I paid. Because I have some emotions opening specific cards / rarity even if it is not worth that much Sorry for this long post and here is a 🥔. The main point of my post is the first bullet point question ;) the rest is ju",
+   "priority": false
+  },
+  {
+   "id": "reddit-24",
    "source": "reddit",
    "title": "Newbie to Lorcana - Would Appreciate Advice on a deck I built!",
    "url": "https://www.reddit.com/r/Lorcana/comments/1x8yz2y/newbie_to_lorcana_would_appreciate_advice_on_a/",
    "author": "NoirChandler",
    "published": "2026-10-18T09:30:06Z",
    "text": "As the title suggests, I'm new to Lorcana. Been eyeing the game for a few years, but I wasn't in the best place financially to get into a TCG hobby. Now, however, I am excited to dip my toes into it. I've read up the basics, watched beginner guide videos, looked up what decks/cards are meta and the strengths/weaknesses of each ink color.... Building good foundational knowledge. I'm keeping casual with deck building for now. Maybe join a local event now and then, but mostly for fun. I started off with a gifted Amber/Emerald starter deck from the Into the Inklands set. The one with the Dalmatians. I loved the 101 Dalmatians movie growing up, and when I realized I could build a deck around them (specifically the \"Dalmatian - Tail Wagger\" cards), I knew what deck I wanted to build. It would be a budget-friendly one for now. More of a themed deck than a real meta one. I've built a dalmatian deck. Don't think it's legal for Core-constructed play but that was never a priority or goal. I am, however, really curious and eager to know how I can improve this deck while keeping to the Dalmatian theme (mostly sticking to other dogs/cats/animals/creatures if I can) without breaking the bank. But enough rambling, haha. Here is what I have so far: 4 Stitch — New Dog 4 Pluto — Friendly Pooch 20 Dalmatian Puppy — Tail Wagger 4 Stitch — Rock Star 4 Lucky — The 15th Puppy 1 Lucky — Runt of the Litter 4 Pepper — Quick-Thinking Puppy 3 Pongo — Dear Old Dad 4 Perdita — Playful Mother 2 Pluto — Dete",
+   "priority": false
+  },
+  {
+   "id": "reddit-25",
+   "source": "reddit",
+   "title": "Locations",
+   "url": "https://www.reddit.com/r/Lorcana/comments/1xav5vj/locations/",
+   "author": "Nexu501",
+   "published": "2026-10-20T15:27:52Z",
+   "text": "Hi i have got a general deckbuilding question. It seems to me that most meta Decks or popular decks have no or at least very rarely any locations used in them. Are Locations considered bad or not worth the Slot? Or are they too nieche? Would love some impressions of people that are more into the meta and deck Building. Thanks in advance",
    "priority": false
   },
   {
@@ -662,6 +416,16 @@
   {
    "id": "youtube-9",
    "source": "youtube",
+   "title": "Disney Lorcana QWIC: Round 1 SKY  (ER) vs R_M_B (ES) SET 14",
+   "url": "https://www.youtube.com/watch?v=pgzxYcFBqs8",
+   "author": "JDZ Quest",
+   "published": "2026-10-24T18:00:26Z",
+   "text": "Quest World Iconic Clash | Sky vs. R_M_B | Disney Lorcana Trading Card Game\n\nWelcome to the Quest World Iconic Clash, a Top 16 single-elimination Disney Lorcana Trading Card Game tournament featuring some of the best players in the world!\n\nThis matchup features Sky, the North American Championship runner-up with multiple Golden Mickeys and an impressive record of top performances, facing off against R&amp;B, a Golden Mickey holder and fellow member of Team Maelstrom.\n\nFilling in for Lambchop, R_M_B must compete without his own deck, but his creativity and Skill make him a dangerous opponent regardless. These teammates and friends now find themselves on opposite sides of the table, turning friendly competition into an intense battle for a spot in the next round.\n\nWith the iconic Hades – Looking for a Deal on the line, who will come out on top?\n\nLeave your predictions in the comments!\n\nHosted by JDZ Quest, thank you to the players for playing and thank you to @TCGarrick for joining me on",
+   "priority": true
+  },
+  {
+   "id": "youtube-10",
+   "source": "youtube",
    "title": "Disney Lorcana QWIC: Round 1 Fungus (RETRO) vs ACE (ES) SET 14",
    "url": "https://www.youtube.com/watch?v=MiMTGsi23vs",
    "author": "JDZ Quest",
@@ -670,7 +434,7 @@
    "priority": true
   },
   {
-   "id": "youtube-10",
+   "id": "youtube-11",
    "source": "youtube",
    "title": "Disney Lorcana QWIC: Round 1 Frank Karsten (ES) vs Shane Downey (ES) SET 14",
    "url": "https://www.youtube.com/watch?v=6cIrMpouQwQ",
@@ -680,7 +444,7 @@
    "priority": true
   },
   {
-   "id": "youtube-11",
+   "id": "youtube-12",
    "source": "youtube",
    "title": "Disney Lorcana QWIC: Round 1 vVonderland (AS) vs Bryan Pereria (AE) SET 14",
    "url": "https://www.youtube.com/watch?v=AKvaPRhm1vQ",
@@ -690,7 +454,7 @@
    "priority": true
   },
   {
-   "id": "youtube-12",
+   "id": "youtube-13",
    "source": "youtube",
    "title": "Disney Lorcana QWIC: Round 1 Lukas Kaupa (Em Sa) vs Carl Go Boom (ES) SET 14",
    "url": "https://www.youtube.com/watch?v=iU706WABlH4",
@@ -700,7 +464,7 @@
    "priority": true
   },
   {
-   "id": "youtube-13",
+   "id": "youtube-14",
    "source": "youtube",
    "title": "Disney Lorcana QWIC: Round 1 Mo Shamblin (PS) vs Pandemonium Heart (AE) SET 14",
    "url": "https://www.youtube.com/watch?v=0sIgU82Fy38",
@@ -710,7 +474,7 @@
    "priority": true
   },
   {
-   "id": "youtube-14",
+   "id": "youtube-15",
    "source": "youtube",
    "title": "Alter Academy 72 (Featuring Xenulous on Hyperia City Emerald/Amethyst!)",
    "url": "https://www.youtube.com/watch?v=lVMhLuwSTH8",
@@ -720,7 +484,7 @@
    "priority": true
   },
   {
-   "id": "youtube-15",
+   "id": "youtube-16",
    "source": "youtube",
    "title": "Manifesting Ep. 6 |Our Favorite Cards In Hyperia City! | Moxies, Jourdon, Garrett | Disney Lorcana",
    "url": "https://www.youtube.com/watch?v=9RSWu5IkehQ",
@@ -730,7 +494,7 @@
    "priority": true
   },
   {
-   "id": "youtube-16",
+   "id": "youtube-17",
    "source": "youtube",
    "title": "Flash is a new Steel STAPLE in Disney Lorcana!",
    "url": "https://www.youtube.com/shorts/yDAkzTqCW0U",
@@ -740,7 +504,7 @@
    "priority": true
   },
   {
-   "id": "youtube-17",
+   "id": "youtube-18",
    "source": "youtube",
    "title": "Max Goof Is One of THE Most Powerful Cards in Disney Lorcana!",
    "url": "https://www.youtube.com/shorts/-qlyto2dUts",
@@ -750,7 +514,7 @@
    "priority": true
   },
   {
-   "id": "youtube-18",
+   "id": "youtube-19",
    "source": "youtube",
    "title": "Ariel's A Very Powerful Legendary in Disney Lorcana !",
    "url": "https://www.youtube.com/shorts/NlaL74iGV3k",
@@ -760,7 +524,7 @@
    "priority": true
   },
   {
-   "id": "youtube-19",
+   "id": "youtube-20",
    "source": "youtube",
    "title": "Disney Lorcana Hyperia City Booster Box Opening! ft. Freddy Rivera | SET 14",
    "url": "https://www.youtube.com/watch?v=HMjO6ufI_lQ",
@@ -770,7 +534,7 @@
    "priority": true
   },
   {
-   "id": "youtube-20",
+   "id": "youtube-21",
    "source": "youtube",
    "title": "Is Ruby Emerald Real!? We Built 15 New Hyperia City Decks | Podcana 161 | Disney Lorcana",
    "url": "https://www.youtube.com/watch?v=DDbRaKDU184",
@@ -780,7 +544,7 @@
    "priority": true
   },
   {
-   "id": "youtube-21",
+   "id": "youtube-22",
    "source": "youtube",
    "title": "Two and a Half Men | Episode 112 | Club Lorcana Podcast",
    "url": "https://www.youtube.com/watch?v=-8oAvmTVG3U",
@@ -790,7 +554,7 @@
    "priority": true
   },
   {
-   "id": "youtube-22",
+   "id": "youtube-23",
    "source": "youtube",
    "title": "Set 14 Meta BEGINS! | Iconic Clash | 16 Decklists",
    "url": "https://www.youtube.com/watch?v=BTcQ_k1qCuk",
@@ -800,7 +564,7 @@
    "priority": true
   },
   {
-   "id": "youtube-23",
+   "id": "youtube-24",
    "source": "youtube",
    "title": "I’m a Voice Actor. Reddit Has Questions.",
    "url": "https://www.youtube.com/watch?v=9oreUA-pwLY",
@@ -810,7 +574,7 @@
    "priority": false
   },
   {
-   "id": "youtube-24",
+   "id": "youtube-25",
    "source": "youtube",
    "title": "Hyperia City Tier List Disney Lorcana Metagame Breakdown",
    "url": "https://www.youtube.com/watch?v=JXASKxzFjjU",
@@ -820,7 +584,7 @@
    "priority": false
   },
   {
-   "id": "youtube-25",
+   "id": "youtube-26",
    "source": "youtube",
    "title": "Amber Ruby Got an Upgrade in Hyperia City - Disney Lorcana Deck",
    "url": "https://www.youtube.com/watch?v=9TNmIbcQyr4",
@@ -830,7 +594,7 @@
    "priority": false
   },
   {
-   "id": "youtube-26",
+   "id": "youtube-27",
    "source": "youtube",
    "title": "today the new Disney Lorcana set is available everywhere! Follow rebekahquests for all things",
    "url": "https://www.youtube.com/shorts/tyOzrz9mtzI",
@@ -840,7 +604,7 @@
    "priority": false
   },
   {
-   "id": "youtube-27",
+   "id": "youtube-28",
    "source": "youtube",
    "title": "happy Hyperia City release day! now available everywhere!! ✨",
    "url": "https://www.youtube.com/shorts/cCcRG8nQ8C4",
@@ -850,7 +614,7 @@
    "priority": false
   },
   {
-   "id": "youtube-28",
+   "id": "youtube-29",
    "source": "youtube",
    "title": "such a simple way to keep these in your Disney Lorcana collection for each set! are you gonna try",
    "url": "https://www.youtube.com/shorts/UwSkqiWCy-c",
@@ -860,7 +624,7 @@
    "priority": false
   },
   {
-   "id": "youtube-29",
+   "id": "youtube-30",
    "source": "youtube",
    "title": "send this to your Disney Lorcana bestie 😆",
    "url": "https://www.youtube.com/shorts/t-cAt4sShhI",
@@ -870,7 +634,7 @@
    "priority": false
   },
   {
-   "id": "youtube-30",
+   "id": "youtube-31",
    "source": "youtube",
    "title": "what Qs do you have? 👇 I’ve found Ink Drops to be so fun and much simpler in practice than it may",
    "url": "https://www.youtube.com/shorts/iLkbGzOTI8U",
@@ -880,7 +644,7 @@
    "priority": false
   },
   {
-   "id": "youtube-31",
+   "id": "youtube-32",
    "source": "youtube",
    "title": "you know I love vaultxhq binders - and the next Pre-Order is open today! Perfect for TCG collectors",
    "url": "https://www.youtube.com/shorts/J885deDqCk0",
@@ -890,7 +654,7 @@
    "priority": false
   },
   {
-   "id": "youtube-32",
+   "id": "youtube-33",
    "source": "youtube",
    "title": "PSA: most people don’t get the big hits… BUT I HOPE YOU DO 🫶",
    "url": "https://www.youtube.com/shorts/07ySAj-PIag",
@@ -900,7 +664,7 @@
    "priority": false
   },
   {
-   "id": "youtube-33",
+   "id": "youtube-34",
    "source": "youtube",
    "title": "Countdown to Season of Villainy Day 1 The greatest villain obviously MUST be the *original* Disney",
    "url": "https://www.youtube.com/shorts/9cJdRjSPzUY",
@@ -910,7 +674,7 @@
    "priority": false
   },
   {
-   "id": "youtube-34",
+   "id": "youtube-35",
    "source": "youtube",
    "title": "that went fast 😅",
    "url": "https://www.youtube.com/shorts/-N2O-Z5qoXQ",
@@ -920,7 +684,7 @@
    "priority": false
   },
   {
-   "id": "youtube-35",
+   "id": "youtube-36",
    "source": "youtube",
    "title": "verdict: Hyperia City cards are SO FUN TO PLAY!! I had such a fabulous time at",
    "url": "https://www.youtube.com/shorts/91ItHdDA-r8",
@@ -930,7 +694,7 @@
    "priority": false
   },
   {
-   "id": "youtube-36",
+   "id": "youtube-37",
    "source": "youtube",
    "title": "Is Hyperia Really Worth IT??  (Lorcana MARKET WATCH & NEWS) - Ep. 251 10/23",
    "url": "https://www.youtube.com/watch?v=dE4vueLvbSs",
@@ -940,7 +704,7 @@
    "priority": false
   },
   {
-   "id": "youtube-37",
+   "id": "youtube-38",
    "source": "youtube",
    "title": "LIVE Hyperia City Testing",
    "url": "https://www.youtube.com/watch?v=GaIyD3lG9A4",
@@ -950,7 +714,7 @@
    "priority": false
   },
   {
-   "id": "youtube-38",
+   "id": "youtube-39",
    "source": "youtube",
    "title": "Pro Level Decks To Try! - Meta Watch Monday / Disney Lorcana",
    "url": "https://www.youtube.com/watch?v=xkspcce3YJU",
@@ -960,7 +724,7 @@
    "priority": false
   },
   {
-   "id": "youtube-39",
+   "id": "youtube-40",
    "source": "youtube",
    "title": "2-Case Disney Lorcana Showdown! | ROK Tournament Gameplay.",
    "url": "https://www.youtube.com/watch?v=DcZRynLbE44",
@@ -970,7 +734,7 @@
    "priority": false
   },
   {
-   "id": "youtube-40",
+   "id": "youtube-41",
    "source": "youtube",
    "title": "Hyperia City Hype with Team Descent! | Let's Talk Lorcana #156",
    "url": "https://www.youtube.com/watch?v=dGrGhlHcpO8",
@@ -980,7 +744,7 @@
    "priority": false
   },
   {
-   "id": "youtube-41",
+   "id": "youtube-42",
    "source": "youtube",
    "title": "Opening a Prerelease Kit! | Moonlight Ink (Hyperia City Release!)",
    "url": "https://www.youtube.com/watch?v=o62aeIiRyNE",
@@ -990,43 +754,113 @@
    "priority": false
   },
   {
+   "id": "inbox-1",
+   "source": "inbox",
+   "title": "Heroes Ink: \"Chapter 14 - Page 1\" @ Heroes Ink x Heroes INN Lorcana Top Decks Winner: Amber Amethyst",
+   "url": "https://inkdecks.com/lorcana-tournaments/heroes-ink-chapter-14-page-1-tournament-decks-364357",
+   "author": "",
+   "published": "2026-10-24T00:00:00Z",
+   "text": "Heroes Ink: \"Chapter 14 - Page 1\" @ Heroes Ink x Heroes INN Lorcana Top Decks Winner: Amber Amethyst",
+   "priority": false
+  },
+  {
    "id": "web-1",
    "source": "web",
    "title": "Disney Lorcana's Hyperia City hits general release on Friday 23 October",
    "url": "https://www.cardstars.com.au/articles/disney-lorcanas-hyperia-city-hits-general-release-on-friday-23-october",
    "author": "",
    "published": null,
-   "text": "Set 14, Hyperia City, came out everywhere on October 23 after prereleases began October 16; it brings Pixar's Coco into Lorcana and adds the new one-use \"ink drops\" mechanic.",
+   "text": "Set 14, Hyperia City, went on general sale October 23 after prereleases starting October 16, bringing Coco and the new ink drop mechanic.",
    "priority": false
   },
   {
    "id": "web-2",
    "source": "web",
-   "title": "Disney Lorcana Collector Boosters and a New 2027 Rarity Revealed - WDW News Today",
-   "url": "https://wdwnt.com/2026/10/disney-lorcana-collector-boosters-and-a-new-rarity-coming-in-2027-revealed/",
+   "title": "Disney Lorcana TCG Set Release Notes: Hyperia City",
+   "url": "https://lorcana.gg/disney-lorcana-tcg-set-release-notes-hyperia-city/",
    "author": "",
    "published": null,
-   "text": "Set 15, Into the Inkdark (out February 12, 2027), will bring Collector Boosters and a new serialized top rarity called \"Illustrious,\" sold only through Ravensburger Play Hub stores, Ravensburger's online store and some Disney locations (the exact October publish date is unconfirmed).",
+   "text": "The release notes for Hyperia City change how stacked keywords work, add a glossary entry for \"ink drop,\" and issue errata so Jukebox's printed text matches how it actually works.",
    "priority": false
   },
   {
    "id": "web-3",
    "source": "web",
-   "title": "Virtual Queues Announced for Disney Lorcana: Hyperia City Release at Walt Disney World and Disneyland",
-   "url": "https://www.laughingplace.com/disney-parks/disney-lorcana-hyperia-city-virtual-queue-october-2026/",
+   "title": "ICv2: 'Disney Lorcana: Into the Inkdark' Hits Preorder",
+   "url": "https://icv2.com/articles/news/view/63708/disney-lorcana-into-inkdark-hits-preorder",
    "author": "",
    "published": null,
-   "text": "Disney set up virtual queues at Disney Springs and Downtown Disney for the Hyperia City launch because earlier releases drew huge crowds (the exact publish date is unconfirmed and may be slightly before October 17).",
+   "text": "Preorders opened for Into the Inkdark (Set 15), which reportedly releases February 12, 2027, with Collector Boosters sold at select Ravensburger Play Hub stores and Disney locations.",
    "priority": false
   },
   {
    "id": "web-4",
    "source": "web",
-   "title": "Hyperia City Weekly Play @ Gemini Games Lorcana Top Decks",
-   "url": "https://inkdecks.com/lorcana-tournaments/hyperia-city-weekly-play-tournament-decks-364351",
+   "title": "Disney Lorcana Collector Boosters and a New 2027 Rarity Revealed - WDW News Today",
+   "url": "https://wdwnt.com/2026/10/disney-lorcana-collector-boosters-and-a-new-rarity-coming-in-2027-revealed/",
    "author": "",
    "published": null,
-   "text": "An early look at the Hyperia City meta: Liam Dolecki's Amethyst/Emerald deck won an 8-player October 21 weekly, ahead of Amber/Steel, Amber/Sapphire and Emerald/Steel.",
+   "text": "Ryan Miller confirmed that Collector Boosters and the serialized Illustrious rarity (23 copies of each card) launch with Into the Inkdark, and named the stores that will sell them.",
+   "priority": false
+  },
+  {
+   "id": "web-5",
+   "source": "web",
+   "title": "Ravensburger Reveals New Details for Disney Lorcana Collector Boosters",
+   "url": "https://bleedingcool.com/collectibles/ravensburger-reveals-new-details-for-disney-lorcana-collector-boosters/",
+   "author": "",
+   "published": null,
+   "text": "Ravensburger shared more about the Collector Boosters: 12 cards per pack, all foil, with better odds at Enchanted and Iconic pulls, while standard boosters stay the same.",
+   "priority": false
+  },
+  {
+   "id": "web-6",
+   "source": "web",
+   "title": "Hyperia City Ends Disney Lorcana's 2026 On A High Note",
+   "url": "https://www.cgmagonline.com/news/hyperia-city-disney-lorcana-2026/",
+   "author": "",
+   "published": null,
+   "text": "CGMagazine's review praises the set's original art and calls ink drop tokens a mechanic that could matter a lot going forward.",
+   "priority": false
+  },
+  {
+   "id": "web-7",
+   "source": "web",
+   "title": "Disney Lorcana TCG's Hyperia City Expansion: First Hands-On Impressions",
+   "url": "https://www.yahoo.com/entertainment/music/articles/disney-lorcana-tcg-hyperia-city-120000151.html",
+   "author": "",
+   "published": null,
+   "text": "A hands-on preview says the set adds a new layer of resource management, and points to Belle – Exceptional Writer, whose ability makes your next action cheaper.",
+   "priority": false
+  },
+  {
+   "id": "web-8",
+   "source": "web",
+   "title": "'Disney Lorcana's Hyperia City' take a major mechanical swing",
+   "url": "https://www.yardbarker.com/entertainment/articles/disney_lorcanas_hyperia_city_take_a_major_mechanical_swing/s1_17316_44429010",
+   "author": "",
+   "published": null,
+   "text": "This analysis says the new starter deck cards probably aren't strong enough to anchor a competitive deck by themselves but could appear in future lists.",
+   "priority": false
+  },
+  {
+   "id": "web-9",
+   "source": "web",
+   "title": "Lorcana Meta Report: Core Constructed October 2026",
+   "url": "https://inkdecks.com/lorcana-metagame",
+   "author": "",
+   "published": null,
+   "text": "Before Hyperia City is legal, Amber/Amethyst Midrange leads Core Constructed with about 19% of the meta, followed by Amber/Emerald Elinor and Amber/Emerald Songs.",
+   "priority": false
+  },
+  {
+   "id": "web-10",
+   "source": "web",
+   "title": "Disney Lorcana Release & Event Calendar » Lorcana Player",
+   "url": "https://lorcanaplayer.com/lorcana-release-event-calendar/",
+   "author": "",
+   "published": null,
+   "text": "A Core Constructed qualifier with a $5K main event runs in Louisville October 24–25 without Hyperia City cards, and Asia's first Disney Lorcana Challenge is in Osaka October 30–November 1.",
    "priority": false
   }
  ],

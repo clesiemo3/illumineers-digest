@@ -188,7 +188,8 @@ mention event dates when that matters.
 - Source "inkdecks" items are this week's events from inkdecks' feed: date, country, \
 player count and winner. The deck name is whatever the winner titled their list, not its \
 ink colors, so don't infer inks from it. Use them for this week's results; Lorcanahunter \
-tournaments ("t-" IDs) carry the ink and podium data.
+tournaments ("t-" IDs), when present, carry the ink and podium data. Without them, take \
+ink colors only from other sources that state them, such as video titles.
 - Source "inbox" items were hand-picked by the editor (often from the Facebook group): \
 include them unless they are trivial. Items with tracked_account_priority come from \
 competitive players, pros or official accounts.

@@ -12,7 +12,8 @@ def collect_all(cfg: Config, end: date) -> Collected:
     out = Collected(start=start, end=end)
 
     t_start = end - timedelta(days=cfg["window"]["tournament_days"])
-    _run(out, "lorcanahunter", lambda: out.tournaments.extend(lorcanahunter.collect(cfg, t_start, end)))
+    if cfg["tournaments"].get("lorcanahunter", True):
+        _run(out, "lorcanahunter", lambda: out.tournaments.extend(lorcanahunter.collect(cfg, t_start, end)))
     _run(out, "inkdecks", lambda: out.items.extend(inkdecks.collect(cfg, since)))
     _run(out, "reddit", lambda: out.items.extend(reddit.collect(cfg, since)))
     _run(out, "youtube", lambda: out.items.extend(youtube.collect(cfg, since)))

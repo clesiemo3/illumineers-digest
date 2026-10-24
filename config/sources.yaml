@@ -13,7 +13,11 @@ window:
   tournament_days: 14
 
 tournaments:
-  # Only events with published decklists are listed. Pages hold 25 events each.
+  # Lorcanahunter: podium players and ink colors, which feed the ink-pair and
+  # player tables. Turned off in favor of the inkdecks feed below; set true to
+  # bring the tables back. Only events with published decklists are listed,
+  # 25 per page.
+  lorcanahunter: false
   max_pages: 4
   min_players: 16
   # inkdecks' event feed: titles, descriptions and links only (allowed by the

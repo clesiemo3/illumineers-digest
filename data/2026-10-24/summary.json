@@ -1,161 +1,143 @@
 {
- "headline": "Hyperia City goes on general release while Amber/Emerald finishes the old format on top",
+ "headline": "Hyperia City hits shelves, first Set 14 invitational goes to EdLorcana, and Inkdark Collector Boosters get details",
  "tldr": [
   {
-   "text": "Set 14, Hyperia City, went on general release October 23 after prereleases began October 16. It brings in Pixar's Coco and adds the new one-use ink drops mechanic.",
+   "text": "Set 14, Hyperia City, went on general sale October 23 after prereleases that started October 16. It adds Coco and the new ink drop mechanic, and the release notes change how stacked keywords work and issue errata for Jukebox.",
    "sources": [
     "web-1",
-    "youtube-27",
-    "youtube-30"
+    "web-2"
    ]
   },
   {
-   "text": "The last big pre-Hyperia events (October 10-11) belonged to Amber/Emerald: 3 wins and 8 podium spots across five events, including a full podium sweep at the 142-player CCQ Sevilla.",
+   "text": "Edmond Chiu (EdLorcana) won the 16-player Quest World Iconic Clash invitational on October 17, the first big look at Set 14 decks. His list was titled \"Emerald / Steel\", and several of the broadcast matches were Emerald/Steel.",
    "sources": [
-    "t-1",
-    "t-3",
-    "t-4",
-    "t-5"
+    "inkdecks-8",
+    "youtube-11",
+    "youtube-23"
    ]
   },
   {
-   "text": "The first look at the Set 14 meta comes from the Quest World Iconic Clash, a 16-player invitational. Amber/Emerald Songs, Emerald/Amethyst Retro, Emerald/Steel and Amber/Steel Rockstar Stitch are all among the 16 decklists.",
+   "text": "Into the Inkdark (Set 15) preorders are open for a reported February 12, 2027 release. It brings 12-card all-foil Collector Boosters and the serialized Illustrious rarity (23 copies of each card). Collector Boosters will be sold only at select Play Hub stores and Disney locations.",
    "sources": [
-    "youtube-22",
-    "youtube-10",
-    "youtube-38"
+    "web-3",
+    "web-4",
+    "web-5"
    ]
   },
   {
-   "text": "Set 15, Into the Inkdark, is due February 12, 2027. It brings Collector Boosters and a new serialized top rarity called Illustrious, sold only through Play Hub stores, Ravensburger's online store and some Disney locations.",
+   "text": "Flash is the first card people are calling broken in the new format. Manifest TCG calls it a new Steel staple, and Reddit says it's overtuned at 2 cost.",
    "sources": [
-    "web-2",
-    "reddit-17"
-   ]
-  },
-  {
-   "text": "Unlike Wilds Unknown and the set before it, Hyperia City is easy to find at or near MSRP in the US, though some players abroad and at certain stores still struggle to get product.",
-   "sources": [
-    "reddit-5",
-    "reddit-3",
-    "reddit-16"
+    "youtube-17",
+    "reddit-19"
    ]
   }
  ],
  "meta": [
   {
-   "text": "Old-format wrap-up (events October 10-11): Amber/Emerald had 3 wins and 8 podiums. It was also the most-played deck at four of the five events, peaking at 34.4% of the field at the Lore Seekers championship and 33.3% at CCQ Sevilla.",
+   "text": "Before Hyperia City was legal, Amber/Amethyst Midrange led Core Constructed with about 19% of the meta, followed by Amber/Emerald Elinor and Amber/Emerald Songs.",
    "sources": [
-    "t-1",
-    "t-3",
-    "t-4",
-    "t-5"
+    "web-9"
    ]
   },
   {
-   "text": "Amber/Amethyst had 1 win and 3 podiums, and was the most-played deck in Torino (25.8%). Emerald/Amethyst won the biggest US event, the 138-player Cauldron Cup CCQ. Emerald/Steel had 2 podiums and no wins.",
+   "text": "The 16 QWIC lists, reviewed by Lorcana Villain, included Emerald/Sapphire (Lukas Kaupa), three Amber/Emerald Songs builds (Bryan Pereira, Jacob Frank, Joseph Quigley), Amber/Steel Rockstar Stitch (vVonderland), two Emerald/Amethyst Retro builds (Alessandro Cavalli, Fungus) and Amethyst/Steel. Emerald/Steel showed up in many of the broadcast matches.",
    "sources": [
-    "t-1",
-    "t-2",
-    "t-4",
-    "t-5"
-   ]
-  },
-  {
-   "text": "Early Hyperia decks: in the Iconic Clash lists, Amber/Emerald Songs (Bryan Pereira, Jacob Frank, Joseph Quigley) appears three times, and Emerald/Amethyst Retro is played by Alessandro Cavalli and Fungus. Lukas Kaupa brought Emerald/Sapphire and vVonderland played Amber/Steel Rockstar Stitch.",
-   "sources": [
-    "youtube-22",
+    "youtube-23",
     "youtube-11",
-    "youtube-12",
-    "youtube-9"
+    "youtube-9",
+    "youtube-10",
+    "youtube-13"
    ]
   },
   {
-   "text": "Emerald/Amethyst Retro looks like an early front-runner. Liam Dolecki won an 8-player weekly at Gemini Games on October 21 with it, ahead of Amber/Steel, Amber/Sapphire and Emerald/Steel. Xenulous (Team Maelstrom) also covered the deck on Alter Academy.",
+   "text": "Emerald/Amethyst Retro looks like one of the top Set 14 decks: Xenulous (Team Maelstrom) went over how to play against it on JBaum's Alter Academy and shared a decklist.",
    "sources": [
-    "web-4",
-    "youtube-14"
+    "youtube-15"
    ]
   },
   {
-   "text": "New cards drawing attention: Manifest calls Flash a new Steel staple, and a Reddit thread says it's overtuned (2 cost, quests for 2, Resist, and it shuts down Rush). Manifest also rates Max Goof as one of the most powerful cards in the game.",
+   "text": "Ruby/Emerald is the deck everyone's testing: Podcana built 15 Hyperia City decks and asked whether it's real, and a Reddit Ruby/Emerald actions list is getting attention. The Lore College says Amber/Ruby got an upgrade.",
    "sources": [
-    "youtube-16",
-    "reddit-21",
-    "youtube-17"
-   ]
-  },
-  {
-   "text": "Brews to watch: Podcana built 15 Hyperia decks and asked whether Ruby/Emerald is real, and a Reddit player reports success with Ruby/Emerald Actions. The Lore College says Amber/Ruby got an upgrade.",
-   "sources": [
-    "youtube-20",
+    "youtube-21",
     "reddit-15",
-    "youtube-25",
-    "youtube-24"
+    "youtube-26"
+   ]
+  },
+  {
+   "text": "Creators keep naming the same new cards as the strongest: Flash (Steel), Max Goof and an Ariel legendary. The Lore College has posted a full Hyperia City tier list.",
+   "sources": [
+    "youtube-17",
+    "youtube-18",
+    "youtube-19",
+    "youtube-25"
    ]
   }
  ],
  "players": [
   {
-   "text": "Team MILQ took first and second at the 64-player Uninkables Masters II in Torino: _MILQ_SirGrima won on Amber/Emerald over teammate _MILQ_Rama on Steel/Emerald, with ZTL_Utini third.",
+   "text": "Edmond Chiu (EdLorcana) won the Quest World Iconic Clash, a 16-player invitational where the prize was the iconic Hades – Looking for a Deal.",
    "sources": [
-    "t-1"
+    "inkdecks-8",
+    "youtube-9"
    ]
   },
   {
-   "text": "Idril won the 142-player CCQ Sevilla, leading an all-Amber/Emerald podium with Mushuu Muchacho and PT_GuRu.",
+   "text": "Round 1 QWIC matchups included three-time champion Frank Karsten vs Shane Downey in an Emerald/Steel mirror, Sky (North American Championship runner-up) vs R_M_B, Fungus vs Ace 103, vVonderland vs Bryan Pereira, Lukas Kaupa vs Carl Go Boom, and Mo Shamblin vs Pandemonium Heart.",
    "sources": [
-    "t-3"
-   ]
-  },
-  {
-   "text": "Fetty Guap won the 138-player Cauldron Cup $5,000 CCQ on Emerald/Amethyst over PidgeyPotPie (Emerald/Amber) and James Gray II (Emerald/Steel). The next day, Troy won the 33-player $1,000 Runback on Amethyst/Amber.",
-   "sources": [
-    "t-4",
-    "t-2"
-   ]
-  },
-  {
-   "text": "GoofyBoy won the 32-player Lore Seekers League Season I Championship on Emerald/Amber, ahead of Lorcanaholic and RyanL.",
-   "sources": [
-    "t-5"
-   ]
-  },
-  {
-   "text": "Iconic Clash first-round matches posted this week include Frank Karsten vs Shane Downey (an Emerald/Steel mirror the caster called extremely technical), Fungus vs Ace 103, vVonderland vs Bryan Pereira, Lukas Kaupa vs Carl Go Boom and Mo Shamblin vs Pandemonium Heart.",
-   "sources": [
-    "youtube-10",
-    "youtube-9",
     "youtube-11",
+    "youtube-9",
+    "youtube-10",
     "youtube-12",
-    "youtube-13"
+    "youtube-13",
+    "youtube-14"
+   ]
+  },
+  {
+   "text": "Darian won the 79-player Through The Decades CCQ Infinity 5K in the US on October 24.",
+   "sources": [
+    "inkdecks-1"
+   ]
+  },
+  {
+   "text": "TT_Egelim won Heroes Ink in Germany (36 players), and MatheusCebolas won the 41-player Mont Set Championship in Brazil on October 17.",
+   "sources": [
+    "inkdecks-2",
+    "inbox-1",
+    "inkdecks-6"
    ]
   }
  ],
  "news": [
   {
-   "text": "Hyperia City (Set 14) has been on general release since October 23. Disney set up virtual queues at Disney Springs and Downtown Disney for the launch because earlier releases drew huge crowds.",
+   "text": "Hyperia City release notes: stacked keywords now work differently, \"ink drop\" has a glossary entry, and Jukebox gets errata so its printed text matches how it actually plays.",
    "sources": [
-    "web-1",
-    "web-3"
+    "web-2"
    ]
   },
   {
-   "text": "Into the Inkdark (Set 15) is set for February 12, 2027, with Collector Boosters and the serialized Illustrious rarity, and new card reveals have started.",
+   "text": "Collector Boosters for Into the Inkdark: 12 cards per pack, all foil, with better odds at Enchanted and Iconic pulls. Standard boosters stay the same. A new Inkdark card was also revealed this week.",
    "sources": [
-    "web-2",
-    "reddit-17"
+    "web-5",
+    "web-4",
+    "reddit-7"
    ]
   },
   {
-   "text": "The D23 2026 boxes and the foil Pooh playmat are being re-released through an EQL raffle with separate US and EU entries. Rules of Villainy also flagged that the Cauldron Cup CCQ survey closes October 30 and that DLC Tampa tickets are on sale.",
+   "text": "Upcoming events: a Core Constructed qualifier with a $5K main event in Louisville on October 24–25 (Hyperia City not legal), and Asia's first Disney Lorcana Challenge in Osaka October 30–November 1. DLC Tampa tickets are on sale, and the Cauldron Cup CCQ survey closes October 30.",
+   "sources": [
+    "web-10",
+    "youtube-3"
+   ]
+  },
+  {
+   "text": "Ravensburger is rereleasing the D23 2026 boxes and the foil Pooh playmat through an EQL raffle, with separate US and EU entries.",
    "sources": [
     "reddit-12",
     "youtube-3"
    ]
   },
   {
-   "text": "Pixelborn Connect now runs in the browser, with ranked webcam games and an option to hide your hand from your opponent while showing it to stream viewers.",
+   "text": "Pixelborn Connect now runs in the browser at pixelborn.app. It has ranked webcam games and a hide-your-hand option for streamers.",
    "sources": [
     "reddit-10"
    ]
@@ -163,33 +145,33 @@
  ],
  "community": [
   {
-   "text": "ICL Season 4 Round 6 (Infinity Week) streamed ETB vs Triad and World Class Cards vs Manifest, with decklists posted on inkdecks.",
+   "text": "Supply depends a lot on where you are. US players report Hyperia City at or below MSRP and urge people not to overpay, but a Dutch player can only find €75 troves, and one LGS is holding stock back to see how the market develops.",
+   "sources": [
+    "reddit-4",
+    "reddit-2",
+    "reddit-16"
+   ]
+  },
+  {
+   "text": "One player asked how to report an LGS to Ravensburger, saying the store resells all its sealed product and promos on the secondary market and fakes event results. Another thread complains that two boxes had matching common-slot sequences and no Enchanteds.",
+   "sources": [
+    "reddit-3",
+    "reddit-23"
+   ]
+  },
+  {
+   "text": "ICL Season 4 Round 6 (Infinity Week) streamed ETB vs Triad and World Class Cards vs Manifest. Decklists are on inkdecks.",
    "sources": [
     "youtube-1",
     "youtube-2"
    ]
   },
   {
-   "text": "Supply split: US players report Hyperia at or under MSRP and urge others not to overpay. Meanwhile, a player in the Netherlands can only find €75 troves, and other posts complain about stores holding product back or reselling it, including a store accused of faking event results.",
-   "sources": [
-    "reddit-5",
-    "reddit-3",
-    "reddit-16",
-    "reddit-4"
-   ]
-  },
-  {
-   "text": "A community pull-rate tracker (lorcanapullrates.ink) says early Hyperia rates look the same as Wilds Unknown so far, with less than half as many packs reported.",
-   "sources": [
-    "reddit-20"
-   ]
-  },
-  {
-   "text": "For deeper early-meta listening: Rules of Villainy covered Brennan DeCandio's Hyperia decks, Manifest discussed its favorite Set 14 cards, and The Illumiteers had Team Descent on.",
+   "text": "Worth a listen: Rules of Villainy ep. 119 goes through the early meta using Brennan DeCandio's decks. Team Descent was on Let's Talk Lorcana for Hyperia hype, and Lorcana Goons' Meta Watch covers the QWIC lists.",
    "sources": [
     "youtube-3",
-    "youtube-15",
-    "youtube-40"
+    "youtube-41",
+    "youtube-39"
    ]
   }
  ]
