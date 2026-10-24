@@ -2,7 +2,7 @@ import time
 
 import httpx
 
-USER_AGENT = "ilumineers-digest/0.1 (personal weekly Lorcana newsletter)"
+USER_AGENT = "illumineers-digest/0.1 (personal weekly Lorcana newsletter)"
 
 _last_request: dict[str, float] = {}
 

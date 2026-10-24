@@ -1,7 +1,7 @@
 # Which sources the digest pulls from and how far back it looks.
 
 site:
-  title: Ilumineers Digest
+  title: Illumineers Digest
   # Public URL where site/ is served. Used for links in the RSS feed.
   base_url: https://clesiemo3.com/illumineers-digest
 

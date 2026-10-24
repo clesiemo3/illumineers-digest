@@ -1,4 +1,4 @@
-# Ilumineers Digest
+# Illumineers Digest
 
 A weekly (and on-demand) Disney Lorcana digest: tournament results, news and
 community highlights, summarized by Claude with a citation on every bullet.
@@ -79,7 +79,7 @@ a home connection.
 - `scripts/install-schedule.sh` installs a launchd job that runs `publish.sh`
   every Monday at 8:00 local time. If the Mac is asleep then, the job runs when
   it wakes; if it's shut down, that week is skipped. The log is at
-  `~/Library/Logs/ilumineers-digest.log`. Remove it with
+  `~/Library/Logs/illumineers-digest.log`. Remove it with
   `scripts/install-schedule.sh --uninstall`.
 - `.github/workflows/digest.yml` only deploys `site/` to GitHub Pages when a
   push changes it. It needs no secrets.

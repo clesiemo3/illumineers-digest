@@ -1,5 +1,5 @@
 [project]
-name = "ilumineers-digest"
+name = "illumineers-digest"
 version = "0.1.0"
 description = "Weekly and on-demand Disney Lorcana news digest, summarized by Claude."
 requires-python = ">=3.12"

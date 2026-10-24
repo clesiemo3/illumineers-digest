@@ -4,7 +4,7 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.ilumineers-digest.weekly</string>
+  <string>com.illumineers-digest.weekly</string>
   <key>ProgramArguments</key>
   <array>
     <string>/bin/bash</string>
@@ -21,8 +21,8 @@
     <integer>0</integer>
   </dict>
   <key>StandardOutPath</key>
-  <string>__HOME__/Library/Logs/ilumineers-digest.log</string>
+  <string>__HOME__/Library/Logs/illumineers-digest.log</string>
   <key>StandardErrorPath</key>
-  <string>__HOME__/Library/Logs/ilumineers-digest.log</string>
+  <string>__HOME__/Library/Logs/illumineers-digest.log</string>
 </dict>
 </plist>
