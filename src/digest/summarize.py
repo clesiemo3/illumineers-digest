@@ -185,6 +185,10 @@ that appear above. If you can't cite it, leave it out.
 placements. Use the provided ink_pair_podiums numbers rather than counting yourself.
 - Tournament data covers a longer window than news because decklists are published late; \
 mention event dates when that matters.
+- Source "inkdecks" items are this week's events from inkdecks' feed: date, country, \
+player count and winner. The deck name is whatever the winner titled their list, not its \
+ink colors, so don't infer inks from it. Use them for this week's results; Lorcanahunter \
+tournaments ("t-" IDs) carry the ink and podium data.
 - Source "inbox" items were hand-picked by the editor (often from the Facebook group): \
 include them unless they are trivial. Items with tracked_account_priority come from \
 competitive players, pros or official accounts.

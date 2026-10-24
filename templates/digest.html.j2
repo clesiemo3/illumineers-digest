@@ -27,6 +27,16 @@
   </ul>
   {% endfor %}
 
+  {% if events %}
+  <h2>Events this week</h2>
+  <p class="muted">{{ events|length }} events from the <a href="https://inkdecks.com/lorcana-tournaments">inkdecks</a> tournament feed. Follow a link for standings and decklists.</p>
+  <ul class="bullets">
+    {% for e in events %}
+    <li><a href="{{ e.url }}">{{ e.title }}</a> <span class="muted">· {{ e.text }}</span></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
   {% if data.tournaments %}
   <h2>Tournament results</h2>
   <p class="muted">{{ data.tournaments|length }} events with published decklists, via <a href="https://lorcanahunter.com/en/past-events">Lorcanahunter</a>. Decklists usually appear a week or two after an event, so this covers a longer period than the news.</p>

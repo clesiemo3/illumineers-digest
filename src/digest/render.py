@@ -20,7 +20,7 @@ SECTIONS = [
 ]
 SOURCE_LABELS = {
     "t": "Tournament", "reddit": "Reddit", "youtube": "YouTube", "bluesky": "Bluesky",
-    "inbox": "Inbox", "web": "Web",
+    "inbox": "Inbox", "web": "Web", "inkdecks": "inkdecks",
 }
 
 env = Environment(
@@ -61,7 +61,12 @@ def render_digest(cfg: Config, data: Collected, summary: DigestSummary | None) -
         sources=sources,
         pairs=stats.ink_pairs(data.tournaments)[:8],
         players=stats.repeat_players(data.tournaments)[:8],
-        uncited=[i for i in data.items if i.id not in numbers] if summary else data.items,
+        # inkdecks events get their own list, so keep them out of "More links".
+        events=sorted(
+            (i for i in data.items if i.source == "inkdecks"),
+            key=lambda i: i.published or datetime.min.replace(tzinfo=timezone.utc), reverse=True,
+        ),
+        uncited=[i for i in data.items if i.source != "inkdecks" and (not summary or i.id not in numbers)],
         generated=datetime.now(timezone.utc),
     )
 

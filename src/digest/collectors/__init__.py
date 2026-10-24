@@ -2,7 +2,7 @@ from datetime import date, datetime, timedelta, timezone
 
 from ..config import Config
 from ..models import Collected
-from . import bluesky, inbox, lorcanahunter, reddit, youtube
+from . import bluesky, inbox, inkdecks, lorcanahunter, reddit, youtube
 
 
 def collect_all(cfg: Config, end: date) -> Collected:
@@ -13,6 +13,7 @@ def collect_all(cfg: Config, end: date) -> Collected:
 
     t_start = end - timedelta(days=cfg["window"]["tournament_days"])
     _run(out, "lorcanahunter", lambda: out.tournaments.extend(lorcanahunter.collect(cfg, t_start, end)))
+    _run(out, "inkdecks", lambda: out.items.extend(inkdecks.collect(cfg, since)))
     _run(out, "reddit", lambda: out.items.extend(reddit.collect(cfg, since)))
     _run(out, "youtube", lambda: out.items.extend(youtube.collect(cfg, since)))
     _run(out, "bluesky", lambda: out.items.extend(bluesky.collect(cfg, since)))

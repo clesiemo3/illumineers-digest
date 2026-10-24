@@ -16,6 +16,13 @@ tournaments:
   # Only events with published decklists are listed. Pages hold 25 events each.
   max_pages: 4
   min_players: 16
+  # inkdecks' event feed: titles, descriptions and links only (allowed by the
+  # site owner; no decklists). Cloudflare blocks scripts from it, so when the
+  # live fetch fails, the copy saved from your browser at saved_file is used.
+  inkdecks:
+    enabled: true
+    url: https://inkdecks.com/lorcana-tournaments/feed.rss
+    saved_file: inkdecks.rss
 
 reddit:
   subreddits: [Lorcana]

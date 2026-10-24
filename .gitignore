@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 .env
+
+# Saved copy of the inkdecks feed: their content, not ours to republish.
+inkdecks.rss

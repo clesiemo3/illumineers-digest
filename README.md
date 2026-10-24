@@ -25,7 +25,8 @@ Python, not by Claude.
 
 | Source | How | Notes |
 |---|---|---|
-| Tournaments | [Lorcanahunter](https://lorcanahunter.com/en/past-events) event pages | Events with decklists only. inkdecks.com isn't used: its robots.txt blocks AI crawlers and it sits behind a Cloudflare challenge. |
+| Tournaments | [Lorcanahunter](https://lorcanahunter.com/en/past-events) event pages | Events with decklists, used for the ink-pair and player tables. Usually a week or two behind. |
+| Events this week | [inkdecks](https://inkdecks.com/lorcana-tournaments) RSS feed | Used with the site owner's permission: titles, descriptions and links only, never decklists. Cloudflare blocks scripts from the feed, so see "Saving the inkdecks feed" below. |
 | Reddit | Public RSS of r/Lorcana top posts for the week | No API key. |
 | YouTube | Channel RSS feeds | Add channel IDs in `config/accounts.yaml`. |
 | Bluesky | Public author feeds; optional keyword search | Search needs `BLUESKY_HANDLE` + `BLUESKY_APP_PASSWORD`. |
@@ -66,6 +67,20 @@ uv run digest render 2026-10-26      # re-render a saved digest after editing te
 
 Each run saves what it collected to `data/<date>/` and writes
 `site/digests/<date>.html`.
+
+## Saving the inkdecks feed
+
+The collector tries the live feed first. While Cloudflare blocks it, save a copy
+from your browser before each run:
+
+1. Open https://inkdecks.com/lorcana-tournaments/feed.rss and save it.
+2. Move it into the project folder as `inkdecks.rss`, for example
+   `mv ~/Downloads/feed.rss inkdecks.rss`.
+
+The file is git-ignored, since it's inkdecks' content. A copy older than three
+days still works but prints a warning; without any copy, the digest notes that
+inkdecks failed and carries on. Change the location with
+`tournaments.inkdecks.saved_file` in `config/sources.yaml`.
 
 ## Scheduling and publishing
 
