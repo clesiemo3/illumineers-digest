@@ -43,9 +43,7 @@ Summaries can run two ways, set by `claude.backend` in `config/sources.yaml`
 
 - **`claude-code`** (default) runs through the Claude Code CLI and counts
   against your Claude subscription's usage limits instead of costing extra.
-  Install Claude Code, then run `claude` once and log in. In CI, create a token
-  with `claude setup-token` and store it as the `CLAUDE_CODE_OAUTH_TOKEN` secret.
-  This backend ignores `ANTHROPIC_API_KEY`, so it never bills the API by accident.
+  Install Claude Code, then run `claude` once and log in. This backend ignores `ANTHROPIC_API_KEY`, so it never bills the API by accident.
 - **`api`** calls the Anthropic API directly and needs `ANTHROPIC_API_KEY`.
   Billed per token.
 
@@ -69,16 +67,27 @@ uv run digest render 2026-10-26      # re-render a saved digest after editing te
 Each run saves what it collected to `data/<date>/` and writes
 `site/digests/<date>.html`.
 
-## Scheduling
+## Scheduling and publishing
 
-`.github/workflows/digest.yml` runs every Monday at 13:00 UTC and has a
-**Run workflow** button for on-demand digests. It commits `data/` and `site/`
-back to the repo and deploys `site/` to GitHub Pages.
+Digests are built on a Mac, not in GitHub Actions. Reddit and Lorcanahunter
+(behind Cloudflare) block requests from cloud servers like GitHub's, but allow
+a home connection.
 
-Repository secrets: `CLAUDE_CODE_OAUTH_TOKEN` for the `claude-code` backend or
-`ANTHROPIC_API_KEY` for the `api` backend, plus optional `BLUESKY_HANDLE` and
-`BLUESKY_APP_PASSWORD`. If your personal site is hosted somewhere
-other than GitHub Pages, replace the Pages steps with a push to that site.
+- `scripts/publish.sh` pulls, builds a digest, then commits and pushes `data/`
+  and `site/`. Arguments go to `digest build`, so an on-demand run is
+  `scripts/publish.sh --days 3`. Set `NO_PUSH=1` to commit without pushing.
+- `scripts/install-schedule.sh` installs a launchd job that runs `publish.sh`
+  every Monday at 8:00 local time. If the Mac is asleep then, the job runs when
+  it wakes; if it's shut down, that week is skipped. The log is at
+  `~/Library/Logs/ilumineers-digest.log`. Remove it with
+  `scripts/install-schedule.sh --uninstall`.
+- `.github/workflows/digest.yml` only deploys `site/` to GitHub Pages when a
+  push changes it. It needs no secrets.
+
+The Mac needs Claude Code logged in and `git push` working without a prompt
+(an SSH key in the macOS keychain, or the HTTPS credential helper). Optional
+Bluesky search credentials (`BLUESKY_HANDLE`, `BLUESKY_APP_PASSWORD`) can go in
+`publish.sh`'s environment.
 
 ## Cost
 

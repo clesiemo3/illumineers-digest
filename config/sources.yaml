@@ -3,7 +3,7 @@
 site:
   title: Ilumineers Digest
   # Public URL where site/ is served. Used for links in the RSS feed.
-  base_url: https://example.com/lorcana
+  base_url: https://clesiemo3.com/illumineers-digest
 
 window:
   # News, Reddit, Bluesky, YouTube and inbox items from the last N days.

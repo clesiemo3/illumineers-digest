@@ -1,79 +1,34 @@
-name: Build digest
+name: Deploy site
+
+# Digests are built on a Mac (scripts/publish.sh), because Reddit and
+# Lorcanahunter block requests from cloud servers like GitHub's. This workflow
+# only publishes site/ to GitHub Pages when a new digest is pushed.
 
 on:
-  schedule:
-    # Mondays 13:00 UTC, after weekend events have had a day to post results.
-    - cron: "0 13 * * 1"
+  push:
+    branches: [main]
+    paths: ["site/**"]
   workflow_dispatch:
-    inputs:
-      days:
-        description: "News window in days (blank = config default)"
-        required: false
-      no_web:
-        description: "Skip the Claude web-search pass"
-        type: boolean
-        default: false
-      backend:
-        description: "Summarizer backend (blank = config default)"
-        type: choice
-        options: ["", claude-code, api]
-        default: ""
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
 concurrency:
-  group: digest
+  group: pages
   cancel-in-progress: false
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: astral-sh/setup-uv@v6
-
-      # Needed for the claude-code backend (runs on your Claude subscription).
-      - name: Install Claude Code
-        run: npm install -g @anthropic-ai/claude-code
-
-      - name: Build digest
-        env:
-          # claude-code backend: token from `claude setup-token` on your machine.
-          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          # api backend only.
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
-          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
-        run: |
-          args=()
-          [ -n "${{ inputs.days }}" ] && args+=(--days "${{ inputs.days }}")
-          [ "${{ inputs.no_web }}" = "true" ] && args+=(--no-web)
-          [ -n "${{ inputs.backend }}" ] && args+=(--backend "${{ inputs.backend }}")
-          uv run digest build "${args[@]}"
-
-      - name: Commit digest to the repo
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data site
-          git diff --cached --quiet || git commit -m "Digest for $(date -u +%F)"
-          git push
-
-      # Publishes site/ to GitHub Pages. If your site lives elsewhere, replace
-      # these two steps with a push to your site's repo or an upload to its host.
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
   deploy:
-    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
       - id: deploy
         uses: actions/deploy-pages@v4
