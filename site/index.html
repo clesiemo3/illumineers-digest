@@ -54,6 +54,28 @@
   .notice { background: var(--accent-soft); border-radius: 8px; padding: 10px 14px; font-size: 0.9rem; }
   .table-wrap { overflow-x: auto; }
   footer { margin-top: 48px; color: var(--muted); font-size: 0.85rem; }
+
+  /* Citation popover and the source it jumps to */
+  a.cite[aria-expanded="true"] { background: var(--accent-soft); border-radius: 3px; }
+  .cite-pop {
+    position: absolute; z-index: 10; width: min(340px, calc(100vw - 16px));
+    background: var(--surface); color: var(--text); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 14px; font-size: 0.9rem; line-height: 1.45;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  }
+  .cite-pop[hidden] { display: none; }
+  .cite-pop-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 6px; font-size: 0.8rem; }
+  .cite-pop-head .muted { font-size: 0.8rem; }
+  .cite-pop-title { display: block; font-weight: 600; text-decoration: none; }
+  .cite-pop-title:hover { text-decoration: underline; }
+  .cite-pop-ext { font-weight: 400; }
+  .cite-pop-preview { margin: 6px 0 0; color: var(--muted); }
+  .cite-pop-jump { display: inline-block; margin-top: 8px; font-size: 0.85rem; }
+  ol.sources li { scroll-margin-top: 30vh; border-radius: 6px; padding: 2px 6px; margin-left: -6px; }
+  ol.sources li:target { background: var(--accent-soft); outline: 2px solid var(--accent); animation: src-flash 1.6s ease-out; }
+  @keyframes src-flash { from { outline-offset: 6px; } to { outline-offset: 0; } }
+  @media (prefers-reduced-motion: reduce) { ol.sources li:target { animation: none; } }
+  ol.sources a.back { margin-left: 8px; font-size: 0.85rem; white-space: nowrap; }
 </style></head>
 <body>
 <main>

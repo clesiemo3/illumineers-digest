@@ -4,6 +4,7 @@ import json
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from pathlib import Path
+from urllib.parse import urlparse
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
@@ -33,8 +34,8 @@ env = Environment(
 
 def render_digest(cfg: Config, data: Collected, summary: DigestSummary | None) -> str:
     # Number citations in order of first use, like footnotes.
-    lookup = {t.id: (t.name, t.url, "Tournament") for t in data.tournaments}
-    lookup |= {i.id: (i.title, i.url, SOURCE_LABELS.get(i.source, i.source)) for i in data.items}
+    lookup = {t.id: _tournament_source(t) for t in data.tournaments}
+    lookup |= {i.id: _item_source(i) for i in data.items}
     numbers: dict[str, int] = {}
     sections = []
     if summary:
@@ -44,15 +45,14 @@ def render_digest(cfg: Config, data: Collected, summary: DigestSummary | None) -
                 refs = []
                 for sid in b.sources:
                     numbers.setdefault(sid, len(numbers) + 1)
-                    refs.append({"n": numbers[sid], "url": lookup[sid][1], "title": lookup[sid][0]})
+                    refs.append({"n": numbers[sid], "url": lookup[sid]["url"], "title": lookup[sid]["title"]})
                 bullets.append({"text": b.text, "refs": refs})
             if bullets:
                 sections.append({"title": title, "bullets": bullets})
 
-    sources = [
-        {"n": n, "title": lookup[sid][0], "url": lookup[sid][1], "kind": lookup[sid][2]}
-        for sid, n in sorted(numbers.items(), key=lambda kv: kv[1])
-    ]
+    # Each cited source, numbered like a footnote. The page's citation popovers
+    # read these from an embedded JSON blob.
+    sources = [{"n": n, **lookup[sid]} for sid, n in sorted(numbers.items(), key=lambda kv: kv[1])]
     return env.get_template("digest.html.j2").render(
         site=cfg["site"],
         data=data,
@@ -69,6 +69,36 @@ def render_digest(cfg: Config, data: Collected, summary: DigestSummary | None) -
         uncited=[i for i in data.items if i.source != "inkdecks" and (not summary or i.id not in numbers)],
         generated=datetime.now(timezone.utc),
     )
+
+
+PREVIEW_CHARS = 240
+
+
+def _item_source(i) -> dict:
+    meta = [i.author, i.published.strftime("%b %-d") if i.published else "", urlparse(i.url).netloc.removeprefix("www.")]
+    return {
+        "title": i.title,
+        "url": i.url,
+        "kind": SOURCE_LABELS.get(i.source, i.source),
+        "meta": " · ".join(m for m in meta if m),
+        "preview": _clip(i.text),
+    }
+
+
+def _tournament_source(t) -> dict:
+    podium = "; ".join(f"{p.rank}. {p.player} ({'/'.join(sorted(p.inks))})" for p in t.podium)
+    return {
+        "title": t.name,
+        "url": t.url,
+        "kind": "Tournament",
+        "meta": " · ".join(m for m in [t.date.strftime("%b %-d"), t.location, f"{t.players} players"] if m),
+        "preview": podium,
+    }
+
+
+def _clip(text: str) -> str:
+    text = " ".join(text.split())
+    return text if len(text) <= PREVIEW_CHARS else text[:PREVIEW_CHARS].rsplit(" ", 1)[0] + "…"
 
 
 def write_site(cfg: Config, site_dir: Path, slug: str, html: str, meta: dict) -> Path:

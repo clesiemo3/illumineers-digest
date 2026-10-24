@@ -22,7 +22,7 @@
   <h2>{{ section.title }}</h2>
   <ul class="bullets">
     {% for b in section.bullets %}
-    <li>{{ b.text }}{% for r in b.refs %}<sup><a href="#src-{{ r.n }}" title="{{ r.title }}">[{{ r.n }}]</a></sup>{% endfor %}</li>
+    <li>{{ b.text }}{% for r in b.refs %}<sup><a class="cite" href="#src-{{ r.n }}" data-n="{{ r.n }}" aria-label="Source {{ r.n }}: {{ r.title }}">[{{ r.n }}]</a></sup>{% endfor %}</li>
     {% endfor %}
   </ul>
   {% endfor %}
@@ -94,7 +94,7 @@
   <h2>Sources</h2>
   <ol class="sources">
     {% for s in sources %}
-    <li id="src-{{ s.n }}"><span class="tag">{{ s.kind }}</span><a href="{{ s.url }}">{{ s.title }}</a></li>
+    <li id="src-{{ s.n }}"><span class="tag">{{ s.kind }}</span><a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title }}</a>{% if s.meta %} <span class="muted">· {{ s.meta }}</span>{% endif %}<a class="back" href="#" hidden>↩ Back to text</a></li>
     {% endfor %}
   </ol>
   {% endif %}
@@ -109,5 +109,133 @@
     {% endif %}
   </footer>
 </main>
+{% if sources %}
+<script type="application/json" id="cite-data">{{ sources|tojson }}</script>
+<script>
+// Citation popovers: hover or focus a [n] to preview its source. The title opens
+// the source in a new tab; "Jump to source" scrolls to it in the Sources list,
+// which is highlighted with a link back to where you were reading.
+(function () {
+  var data = {};
+  JSON.parse(document.getElementById("cite-data").textContent).forEach(function (s) { data[s.n] = s; });
+  var pop = document.createElement("div");
+  pop.className = "cite-pop";
+  pop.id = "cite-pop";
+  pop.setAttribute("role", "dialog");
+  pop.hidden = true;
+  document.body.appendChild(pop);
+
+  var current = null, hideTimer = null, showTimer = null, lastCite = null;
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text) e.textContent = text;
+    return e;
+  }
+
+  function show(cite) {
+    clearTimeout(hideTimer);
+    var s = data[cite.dataset.n];
+    if (!s) return;
+    current = cite;
+    pop.replaceChildren();
+    var head = el("div", "cite-pop-head");
+    head.append(el("span", "tag", s.kind));
+    if (s.meta) head.append(el("span", "muted", s.meta));
+    var title = el("a", "cite-pop-title", s.title);
+    title.href = s.url; title.target = "_blank"; title.rel = "noopener";
+    title.append(el("span", "cite-pop-ext", " ↗"));
+    pop.append(head, title);
+    if (s.preview) pop.append(el("p", "cite-pop-preview", s.preview));
+    var jump = el("a", "cite-pop-jump", "Jump to source [" + s.n + "] ↓");
+    jump.href = "#src-" + s.n;
+    jump.addEventListener("click", function () { lastCite = cite; hide(true); });
+    pop.append(jump);
+    // Sit right after the citation so Tab moves from [n] into the popover's links.
+    cite.parentNode.after(pop);
+    pop.hidden = false;
+    cite.setAttribute("aria-expanded", "true");
+    cite.setAttribute("aria-controls", "cite-pop");
+    place(cite);
+  }
+
+  function place(cite) {
+    var r = cite.getBoundingClientRect(), m = 8;
+    pop.style.left = "0px"; pop.style.top = "0px";
+    var w = pop.offsetWidth, h = pop.offsetHeight;
+    var left = Math.min(Math.max(m, r.left + r.width / 2 - w / 2), window.innerWidth - w - m);
+    var top = r.bottom + 6;
+    if (top + h > window.innerHeight - m && r.top - h - 6 > m) top = r.top - h - 6;
+    pop.style.left = left + window.scrollX + "px";
+    pop.style.top = top + window.scrollY + "px";
+  }
+
+  function hide(now) {
+    clearTimeout(showTimer);
+    clearTimeout(hideTimer);
+    var go = function () {
+      pop.hidden = true;
+      if (current) current.setAttribute("aria-expanded", "false");
+      current = null;
+    };
+    now ? go() : (hideTimer = setTimeout(go, 200));
+  }
+
+  var lastPointer = "mouse";
+  document.addEventListener("pointerdown", function (e) { lastPointer = e.pointerType; }, true);
+
+  document.querySelectorAll("a.cite").forEach(function (cite) {
+    cite.setAttribute("aria-expanded", "false");
+    cite.addEventListener("mouseenter", function () {
+      if (lastPointer !== "mouse") return;
+      clearTimeout(hideTimer);
+      showTimer = setTimeout(function () { show(cite); }, 120);
+    });
+    cite.addEventListener("mouseleave", function () { clearTimeout(showTimer); hide(); });
+    cite.addEventListener("focus", function () { if (lastPointer === "mouse" || !current) show(cite); });
+    cite.addEventListener("click", function (e) {
+      // On touch screens the first tap previews; tapping the same [n] again jumps.
+      if (lastPointer !== "mouse" && current !== cite) { e.preventDefault(); show(cite); return; }
+      lastCite = cite;
+      hide(true);
+    });
+  });
+
+  pop.addEventListener("mouseenter", function () { clearTimeout(hideTimer); });
+  pop.addEventListener("mouseleave", function () { if (lastPointer === "mouse") hide(); });
+  pop.addEventListener("focusout", function (e) {
+    if (!pop.contains(e.relatedTarget) && e.relatedTarget !== current) hide();
+  });
+  document.addEventListener("focusout", function (e) {
+    if (e.target === current && !pop.contains(e.relatedTarget)) hide();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && current) { var c = current; hide(true); c.focus(); }
+  });
+  document.addEventListener("click", function (e) {
+    if (current && !pop.contains(e.target) && e.target !== current) hide(true);
+  });
+  window.addEventListener("resize", function () { if (current) place(current); });
+
+  // After a jump, offer a way back to the citation that was clicked.
+  function markTarget() {
+    document.querySelectorAll("ol.sources a.back").forEach(function (b) { b.hidden = true; });
+    var li = location.hash.indexOf("#src-") === 0 && document.getElementById(location.hash.slice(1));
+    if (li && lastCite) li.querySelector("a.back").hidden = false;
+  }
+  window.addEventListener("hashchange", markTarget);
+  document.querySelectorAll("ol.sources a.back").forEach(function (b) {
+    b.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (!lastCite) return;
+      b.hidden = true;
+      lastCite.scrollIntoView({ block: "center" });
+      lastCite.focus({ preventScroll: true });
+    });
+  });
+})();
+</script>
+{% endif %}
 </body>
 </html>
