@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Illumineers Digest · Oct 26, 2026</title>
+  <meta name="description" content="Hyperia City hits shelves: Emerald-Steel leads early Core meta while Amber-Amethyst takes Heroes Ink">
+<style>
+  :root {
+    --bg: #faf8f4; --surface: #ffffff; --text: #1f1d1a; --muted: #6b665e;
+    --border: #e6e1d8; --accent: #6a3fa0; --accent-soft: #f1ebf8;
+    --amber: #f4b300; --amethyst: #80387b; --emerald: #298a34;
+    --ruby: #d3082f; --sapphire: #0189c4; --steel: #8e98a3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15131a; --surface: #1e1b24; --text: #ece8f1; --muted: #a29cab;
+      --border: #332e3b; --accent: #c3a3ec; --accent-soft: #2a2236;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15131a; --surface: #1e1b24; --text: #ece8f1; --muted: #a29cab;
+    --border: #332e3b; --accent: #c3a3ec; --accent-soft: #2a2236;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  a { color: var(--accent); }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0.2em 0 0.3em; }
+  h2 { font-size: 1.2rem; margin: 2.2em 0 0.6em; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 1rem; margin: 0 0 4px; }
+  .kicker { color: var(--muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .muted { color: var(--muted); font-size: 0.9rem; }
+  ul.bullets { padding-left: 1.2em; }
+  ul.bullets li { margin: 0.45em 0; }
+  sup a { text-decoration: none; font-size: 0.75em; padding: 0 1px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin: 10px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 600; font-size: 0.85rem; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .inks { display: inline-flex; gap: 3px; vertical-align: middle; }
+  .ink { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+  .ink-Amber { background: var(--amber); } .ink-Amethyst { background: var(--amethyst); }
+  .ink-Emerald { background: var(--emerald); } .ink-Ruby { background: var(--ruby); }
+  .ink-Sapphire { background: var(--sapphire); } .ink-Steel { background: var(--steel); }
+  ol.podium { margin: 6px 0 0; padding-left: 1.4em; }
+  ol.sources { font-size: 0.9rem; padding-left: 1.8em; }
+  ol.sources li { margin: 3px 0; word-break: break-word; }
+  .tag { font-size: 0.75rem; background: var(--accent-soft); color: var(--accent); border-radius: 4px; padding: 1px 6px; margin-right: 4px; }
+  .notice { background: var(--accent-soft); border-radius: 8px; padding: 10px 14px; font-size: 0.9rem; }
+  .table-wrap { overflow-x: auto; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.85rem; }
+
+  /* Citation popover and the source it jumps to */
+  a.cite[aria-expanded="true"] { background: var(--accent-soft); border-radius: 3px; }
+  .cite-pop {
+    position: absolute; z-index: 10; width: min(340px, calc(100vw - 16px));
+    background: var(--surface); color: var(--text); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 14px; font-size: 0.9rem; line-height: 1.45;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  }
+  .cite-pop[hidden] { display: none; }
+  .cite-pop-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 6px; font-size: 0.8rem; }
+  .cite-pop-head .muted { font-size: 0.8rem; }
+  .cite-pop-title { display: block; font-weight: 600; text-decoration: none; }
+  .cite-pop-title:hover { text-decoration: underline; }
+  .cite-pop-ext { font-weight: 400; }
+  .cite-pop-preview { margin: 6px 0 0; color: var(--muted); }
+  .cite-pop-jump { display: inline-block; margin-top: 8px; font-size: 0.85rem; }
+  ol.sources li { scroll-margin-top: 30vh; border-radius: 6px; padding: 2px 6px; margin-left: -6px; }
+  ol.sources li:target { background: var(--accent-soft); outline: 2px solid var(--accent); animation: src-flash 1.6s ease-out; }
+  @keyframes src-flash { from { outline-offset: 6px; } to { outline-offset: 0; } }
+  @media (prefers-reduced-motion: reduce) { ol.sources li:target { animation: none; } }
+  ol.sources a.back { margin-left: 8px; font-size: 0.85rem; white-space: nowrap; }
+</style></head>
+<body>
+<main>
+  <div class="kicker">Illumineers Digest · Oct 19 – Oct 26, 2026</div>
+  <h1>Hyperia City hits shelves: Emerald-Steel leads early Core meta while Amber-Amethyst takes Heroes Ink</h1>
+
+  <h2>The short version</h2>
+  <ul class="bullets">
+    <li>Hyperia City (Set 14) went on sale at all retailers on October 23, a week after its October 16 prerelease. Players report it is easy to find at or under MSRP.<sup><a class="cite" href="#src-1" data-n="1" aria-label="Source 1: Disney Lorcana Hyperia City Set » Lorcana Player">[1]</a></sup><sup><a class="cite" href="#src-2" data-n="2" aria-label="Source 2: happy Hyperia City release day! now available everywhere!! ✨">[2]</a></sup><sup><a class="cite" href="#src-3" data-n="3" aria-label="Source 3: Love to see it at Hyperia releases at essentially MSRP">[3]</a></sup></li>
+    <li>The first Hyperia City Core Constructed meta report puts Emerald-Steel Evasive on top at about 23% of the field. Amber-Emerald Circle is next at about 15%, followed by Amber-Sapphire Princesses.<sup><a class="cite" href="#src-4" data-n="4" aria-label="Source 4: Lorcana Meta Report: Core Constructed October 2026">[4]</a></sup></li>
+    <li>TT_Egelim won Heroes Ink &#39;Chapter 14 - Page 1&#39; in Germany (36 players) with Amber-Amethyst. Amber-Emerald Songs won Top Deck Keep the same weekend.<sup><a class="cite" href="#src-5" data-n="5" aria-label="Source 5: Heroes Ink: &#34;Chapter 14 - Page 1&#34; @ Heroes Ink x Heroes INN Lorcana Top Decks Winner: Amber Amethyst">[5]</a></sup><sup><a class="cite" href="#src-6" data-n="6" aria-label="Source 6: Heroes Ink: “Chapter 14 - Page 1” @ Heroes Ink x Heroes INN">[6]</a></sup><sup><a class="cite" href="#src-7" data-n="7" aria-label="Source 7: Best Hyperia City Decks! | Heroes Ink/Top Deck Keep | Top 8 Decklists">[7]</a></sup></li>
+    <li>Ravensburger confirmed Collector Boosters and a new serialized Illustrious rarity for Into the Inkdark on February 12, 2027. They will only be sold through Play Hub stores, Ravensburger&#39;s online store and some Disney locations.<sup><a class="cite" href="#src-8" data-n="8" aria-label="Source 8: Disney Lorcana Collector Boosters and a New 2027 Rarity Revealed - WDW News Today">[8]</a></sup><sup><a class="cite" href="#src-9" data-n="9" aria-label="Source 9: Ravensburger Reveals New Details for Disney Lorcana Collector Boosters">[9]</a></sup></li>
+    <li>The Quest World Iconic Clash, a Top 16 invitational and one of the first high-level Set 14 events, is releasing its Round 1 matches on JDZ Quest&#39;s channel.<sup><a class="cite" href="#src-10" data-n="10" aria-label="Source 10: Set 14 Meta BEGINS! | Iconic Clash | 16 Decklists">[10]</a></sup><sup><a class="cite" href="#src-11" data-n="11" aria-label="Source 11: Disney Lorcana QWIC: Round 1 Frank Karsten (ES) vs Shane Downey (ES) SET 14">[11]</a></sup></li>
+  </ul>
+  <h2>Meta snapshot</h2>
+  <ul class="bullets">
+    <li>Emerald-Steel Evasive is the early deck to beat at about 23% of the Core field. It also did well at the 27-player Quest Coast IV, where Detectives and Princesses decks made the top cut too.<sup><a class="cite" href="#src-4" data-n="4" aria-label="Source 4: Lorcana Meta Report: Core Constructed October 2026">[4]</a></sup><sup><a class="cite" href="#src-12" data-n="12" aria-label="Source 12: Quest Coast IV: Hyperia City @ Angry Goose Games Lorcana Top Decks">[12]</a></sup></li>
+    <li>Amber-Emerald is everywhere. At Heroes Ink it took 2nd as an aggro build and had two more lists as Songs. At Top Deck Keep, Songs builds took 1st, a Top 4 spot and one more slot in the top lists.<sup><a class="cite" href="#src-7" data-n="7" aria-label="Source 7: Best Hyperia City Decks! | Heroes Ink/Top Deck Keep | Top 8 Decklists">[7]</a></sup></li>
+    <li>Amber-Amethyst won Heroes Ink and also made Top 4 at both Heroes Ink and Top Deck Keep. Amber-Ruby took 2nd at Top Deck Keep. The Lore College says Amber-Ruby got real upgrades from Set 14.<sup><a class="cite" href="#src-7" data-n="7" aria-label="Source 7: Best Hyperia City Decks! | Heroes Ink/Top Deck Keep | Top 8 Decklists">[7]</a></sup><sup><a class="cite" href="#src-5" data-n="5" aria-label="Source 5: Heroes Ink: &#34;Chapter 14 - Page 1&#34; @ Heroes Ink x Heroes INN Lorcana Top Decks Winner: Amber Amethyst">[5]</a></sup><sup><a class="cite" href="#src-13" data-n="13" aria-label="Source 13: Amber Ruby Got an Upgrade in Hyperia City - Disney Lorcana Deck">[13]</a></sup></li>
+    <li>At a &#39;Win 2 Cases&#39; Hyperia City Core event in Italy, Amber-Emerald Circle and Amber-Amethyst Merida took most of the top spots.<sup><a class="cite" href="#src-14" data-n="14" aria-label="Source 14: Win 2 Cases - Hyperia City Core Tournament @ Il Laboratorio Giochi Lorcana Top Decks">[14]</a></sup></li>
+    <li>The 16 QWIC invitational lists included three Amber-Emerald Songs decks, Emerald-Amethyst Retro (Alessandro Cavalli, Fungus), Amber-Steel Rockstar Stitch (vVonderland), Emerald-Sapphire (Lukas Kaupa) and Amethyst-Steel.<sup><a class="cite" href="#src-10" data-n="10" aria-label="Source 10: Set 14 Meta BEGINS! | Iconic Clash | 16 Decklists">[10]</a></sup></li>
+    <li>Flash is getting called a new Steel staple. Manifest made a video about it, and a Reddit thread called it overtuned: a 2-cost, 2-lore quester with Resist that punishes Rush decks. Manifest also rates Max Goof as one of the strongest cards in the set.<sup><a class="cite" href="#src-15" data-n="15" aria-label="Source 15: Flash is a new Steel STAPLE in Disney Lorcana!">[15]</a></sup><sup><a class="cite" href="#src-16" data-n="16" aria-label="Source 16: Flash is busted">[16]</a></sup><sup><a class="cite" href="#src-17" data-n="17" aria-label="Source 17: Max Goof Is One of THE Most Powerful Cards in Disney Lorcana!">[17]</a></sup></li>
+    <li>Off-meta brews to watch: Podcana built 15 Set 14 decks and asks whether Ruby-Emerald is real, and Ruby-Emerald Retro made the top lists at both weekend events. Xenulous also covered Emerald-Amethyst Retro on Alter Academy.<sup><a class="cite" href="#src-18" data-n="18" aria-label="Source 18: Is Ruby Emerald Real!? We Built 15 New Hyperia City Decks | Podcana 161 | Disney Lorcana">[18]</a></sup><sup><a class="cite" href="#src-7" data-n="7" aria-label="Source 7: Best Hyperia City Decks! | Heroes Ink/Top Deck Keep | Top 8 Decklists">[7]</a></sup><sup><a class="cite" href="#src-19" data-n="19" aria-label="Source 19: Alter Academy 72 (Featuring Xenulous on Hyperia City Emerald/Amethyst!)">[19]</a></sup></li>
+  </ul>
+  <h2>Standout players</h2>
+  <ul class="bullets">
+    <li>TT_Egelim won Heroes Ink &#39;Chapter 14 - Page 1&#39; (October 24, Germany, 36 players) with Amber-Amethyst.<sup><a class="cite" href="#src-6" data-n="6" aria-label="Source 6: Heroes Ink: “Chapter 14 - Page 1” @ Heroes Ink x Heroes INN">[6]</a></sup><sup><a class="cite" href="#src-5" data-n="5" aria-label="Source 5: Heroes Ink: &#34;Chapter 14 - Page 1&#34; @ Heroes Ink x Heroes INN Lorcana Top Decks Winner: Amber Amethyst">[5]</a></sup></li>
+    <li>Darian won the 79-player Through The Decades CCQ Infinity 5K in the US on October 24. This feed doesn&#39;t include the deck&#39;s inks.<sup><a class="cite" href="#src-20" data-n="20" aria-label="Source 20: Through The Decades CCQ Infinity 5K - Swiss Standings @ Through The Decades Sports Cards &amp; Gaming">[20]</a></sup></li>
+    <li>QWIC Round 1 included three-time champion Frank Karsten vs Shane Downey in an Emerald-Steel mirror that the host called one of the most technical he&#39;s seen. Other matches: Sky (Emerald-Ruby) vs R_M_B (Emerald-Steel), Fungus (Retro) vs Ace 103 (Emerald-Steel), and Diego &#39;Level 9001&#39; Saz (Amethyst-Steel) vs Cav0 (Emerald-Sapphire).<sup><a class="cite" href="#src-11" data-n="11" aria-label="Source 11: Disney Lorcana QWIC: Round 1 Frank Karsten (ES) vs Shane Downey (ES) SET 14">[11]</a></sup><sup><a class="cite" href="#src-21" data-n="21" aria-label="Source 21: Disney Lorcana QWIC: Round 1 SKY  (ER) vs R_M_B (ES) SET 14">[21]</a></sup><sup><a class="cite" href="#src-22" data-n="22" aria-label="Source 22: Disney Lorcana QWIC: Round 1 Fungus (RETRO) vs ACE (ES) SET 14">[22]</a></sup><sup><a class="cite" href="#src-23" data-n="23" aria-label="Source 23: Disney Lorcana QWIC: Round 1 Diego LEVEL 9001 (PS) vs Cav0 (EmSa) SET 14">[23]</a></sup></li>
+  </ul>
+  <h2>News</h2>
+  <ul class="bullets">
+    <li>Into the Inkdark (Set 15, villain-themed, brings in Onward) launches February 12, 2027. It comes with Collector Boosters: 12 special foils per pack and better Enchanted and Iconic odds. Six serialized Illustrious characters get 23 copies each (138 worldwide), starting with Maleficent – Biding Her Time. Set 15 card reveals have started.<sup><a class="cite" href="#src-8" data-n="8" aria-label="Source 8: Disney Lorcana Collector Boosters and a New 2027 Rarity Revealed - WDW News Today">[8]</a></sup><sup><a class="cite" href="#src-9" data-n="9" aria-label="Source 9: Ravensburger Reveals New Details for Disney Lorcana Collector Boosters">[9]</a></sup><sup><a class="cite" href="#src-24" data-n="24" aria-label="Source 24: Into the Inkdark Card List">[24]</a></sup><sup><a class="cite" href="#src-25" data-n="25" aria-label="Source 25: New Into the Inkdark card!">[25]</a></sup></li>
+    <li>Ravensburger is rereleasing the D23 2026 boxes and the foil Pooh playmat through an EQL raffle, with US and EU entry links.<sup><a class="cite" href="#src-26" data-n="26" aria-label="Source 26: D23 2026 boxes and Foil Playmat Pooh rerelease via EQL">[26]</a></sup><sup><a class="cite" href="#src-27" data-n="27" aria-label="Source 27: 119th Rule of Villainy - Flash Mob at the Smithy">[27]</a></sup></li>
+    <li>Rules of Villainy flagged two dates: the Cauldron Cup CCQ survey closes October 30, and DLC Tampa tickets are on sale.<sup><a class="cite" href="#src-27" data-n="27" aria-label="Source 27: 119th Rule of Villainy - Flash Mob at the Smithy">[27]</a></sup></li>
+    <li>Pixelborn Connect now runs in a browser with ranked webcam games. It also has a streamer mode that hides your hand from your opponent so you can show it to viewers.<sup><a class="cite" href="#src-28" data-n="28" aria-label="Source 28: Pixelborn Connect is now in your browser">[28]</a></sup></li>
+  </ul>
+  <h2>Community pulse</h2>
+  <ul class="bullets">
+    <li>ICL Season 4 Round 6 &#39;Infinity Week&#39; streamed ETB vs Triad and World Class Cards vs Manifest. Decklists are on inkdecks.<sup><a class="cite" href="#src-29" data-n="29" aria-label="Source 29: ICL Season 4 Round 6: ETB vs Triad - INFINITY WEEK!">[29]</a></sup><sup><a class="cite" href="#src-30" data-n="30" aria-label="Source 30: ICL Season 4 Round 6: World Class Cards vs Manifest - INFINITY WEEK!">[30]</a></sup></li>
+    <li>Early Set 14 tier lists and breakdowns came from The Lore College, Podcana, Rules of Villainy (looking at Brennan DeCandio&#39;s decks) and Lorcana Villain&#39;s top 8 list reviews.<sup><a class="cite" href="#src-31" data-n="31" aria-label="Source 31: Hyperia City Tier List Disney Lorcana Metagame Breakdown">[31]</a></sup><sup><a class="cite" href="#src-18" data-n="18" aria-label="Source 18: Is Ruby Emerald Real!? We Built 15 New Hyperia City Decks | Podcana 161 | Disney Lorcana">[18]</a></sup><sup><a class="cite" href="#src-27" data-n="27" aria-label="Source 27: 119th Rule of Villainy - Flash Mob at the Smithy">[27]</a></sup><sup><a class="cite" href="#src-7" data-n="7" aria-label="Source 7: Best Hyperia City Decks! | Heroes Ink/Top Deck Keep | Top 8 Decklists">[7]</a></sup></li>
+    <li>Reddit questioned pack value: one couple got no Enchanteds from two displays and found boosters with identical first commons. Another user&#39;s local store held back Hyperia stock to see how prices moved.<sup><a class="cite" href="#src-32" data-n="32" aria-label="Source 32: Lorcana opening feeling">[32]</a></sup><sup><a class="cite" href="#src-33" data-n="33" aria-label="Source 33: LGS holding back Hyperia City">[33]</a></sup></li>
+    <li>A deckbuilding thread asked why locations rarely show up in meta decks. It&#39;s a useful one to send to newer players.<sup><a class="cite" href="#src-34" data-n="34" aria-label="Source 34: Locations">[34]</a></sup></li>
+  </ul>
+
+  <h2>Events this week</h2>
+  <p class="muted">4 events from the <a href="https://inkdecks.com/lorcana-tournaments">inkdecks</a> tournament feed. Follow a link for standings and decklists.</p>
+  <ul class="bullets">
+    <li><a href="https://inkdecks.com/lorcana-tournaments/through-the-decades-ccq-infinity-5k-swiss-standings-tournament-decks-364358">Through The Decades CCQ Infinity 5K - Swiss Standings @ Through The Decades Sports Cards &amp; Gaming</a> <span class="muted">· Event on October 24, 2026 in US, 79 players. Winner: Darian with a deck titled “Cortisol Down, Paws Up”.</span></li>
+    <li><a href="https://inkdecks.com/lorcana-tournaments/heroes-ink-chapter-14-page-1-tournament-decks-364357">Heroes Ink: “Chapter 14 - Page 1” @ Heroes Ink x Heroes INN</a> <span class="muted">· Event on October 24, 2026 in DE, 36 players. Winner: TT_Egelim with a deck titled “Makoya 0-3”.</span></li>
+    <li><a href="https://inkdecks.com/lorcana-tournaments/inker-belles-halloween-event-tournament-decks-364354">Inker Belles&#39; Halloween Event @ Inker Belles</a> <span class="muted">· Event on October 24, 2026 in NO, 10 players. Winner: Drakeblood with a deck titled “The Purple Villains Association”.</span></li>
+    <li><a href="https://inkdecks.com/lorcana-tournaments/hyperia-city-weekly-play-tournament-decks-364351">Hyperia City Weekly Play @ Gemini Games</a> <span class="muted">· Event on October 21, 2026 in GB, 8 players. Winner: Liam Dolecki with a deck titled “S14 You Get 3 Wishes”.</span></li>
+  </ul>
+
+
+  <h2>More links</h2>
+  <ul class="bullets">
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xdg7gw/perfect_for_the_ofrenda/">Perfect for the Ofrenda</a> <span class="muted">· HellshakeBrando</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xen9k0/the_great_hunny_rescue_struggle_is_real/">The Great Hunny Rescue Struggle Is Real</a> <span class="muted">· SmithNchips</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xf50dy/whats_the_card_that_made_you_excited_to_play/">What’s the card that made you excited to play Lorcana? It doesn’t have to be your favorite or the most valuable card you own, just the card that got you hooked.</a> <span class="muted">· OrnerySnoflake</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xb57fw/lorcana_quest_of_wonders_at_disneyland/">Lorcana Quest of Wonders at Disneyland</a> <span class="muted">· sgtreesh37</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xaxcxh/as_a_mainly_solo_player_playing_against_another/">As a mainly solo player, playing against another person for the first time was jarring</a> <span class="muted">· imtotallynormal</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xcp8h4/maui_shark_joins_the_coconut_squad/">Maui Shark joins the Coconut squad!</a> <span class="muted">· Waiting_for_Dentice</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xbdl2c/where_can_i_get_these_japan_exclusive_sleeves_for/">Where can I get these Japan Exclusive Sleeves for a good price?</a> <span class="muted">· Technical_Hat2796</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xejhyg/do_you_think_well_ever_see_any_characters_from/">Do you think we’ll ever see any characters from the sequels?</a> <span class="muted">· M_Ambassador</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xazz9p/does_the_word_counter_being_too_bottomaligned_in/">Does the word &#39;Counter&#39; being too bottom-aligned in its little spot bug anyone else or is it just me?</a> <span class="muted">· blueeetherabbit</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xbv62i/ruby_emerald_actions_fun_times/">Ruby Emerald Actions! Fun times!</a> <span class="muted">· Tobri1987</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xa65i6/first_lorcana_deck/">First Lorcana Deck</a> <span class="muted">· Mammoth-Attention820</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xf7sbx/i_finally_labeled_my_binders/">I finally labeled my binders!</a> <span class="muted">· LumiBailey2</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xca6bj/max_goof/">Max Goof</a> <span class="muted">· Shandothederpdo</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xcyn0v/necro_princesses_set_14/">Necro Princesses Set 14</a> <span class="muted">· mjp3898</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xchqf3/blue_steel_is_so_back/">Blue Steel Is So Back!</a> <span class="muted">· Malferon</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xch9lf/have_you_played_in_a_league_or_run_one/">Have you played in a league or run one?</a> <span class="muted">· about6smurfs</span></li>
+    <li><span class="tag">reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xd3uds/no_foil_connecting_cards_in_hyperia_city/">No foil connecting cards in Hyperia City?</a> <span class="muted">· RefrigeratorPast5394</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/watch?v=Tau_hkmpLW0">Deck Test Tuesday - Hyperia City [Week 1] - Sealed Showdown</a> <span class="muted">· Rules of Villainy Podcast</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/watch?v=AKvaPRhm1vQ">Disney Lorcana QWIC: Round 1 vVonderland (AS) vs Bryan Pereria (AE) SET 14</a> <span class="muted">· JDZ Quest</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/watch?v=iU706WABlH4">Disney Lorcana QWIC: Round 1 Lukas Kaupa (Em Sa) vs Carl Go Boom (ES) SET 14</a> <span class="muted">· JDZ Quest</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/watch?v=0sIgU82Fy38">Disney Lorcana QWIC: Round 1 Mo Shamblin (PS) vs Pandemonium Heart (AE) SET 14</a> <span class="muted">· JDZ Quest</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/watch?v=9RSWu5IkehQ">Manifesting Ep. 6 |Our Favorite Cards In Hyperia City! | Moxies, Jourdon, Garrett | Disney Lorcana</a> <span class="muted">· Manifest TCG</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/shorts/NlaL74iGV3k">Ariel&#39;s A Very Powerful Legendary in Disney Lorcana !</a> <span class="muted">· Manifest TCG</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/watch?v=HMjO6ufI_lQ">Disney Lorcana Hyperia City Booster Box Opening! ft. Freddy Rivera | SET 14</a> <span class="muted">· Manifest TCG</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/watch?v=-8oAvmTVG3U">Two and a Half Men | Episode 112 | Club Lorcana Podcast</a> <span class="muted">· Zan Syed</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/watch?v=izKCbGgv2UU">We Opened a FULL CASE of Disney Lorcana&#39;s Hyperia City... Was it Worth It?</a> <span class="muted">· Brent Mukai</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/shorts/CUr6H0HM7KA">🔴TONIGHT: Stream Ends When I Beat FNAF (or poop my pants)</a> <span class="muted">· Brent Mukai</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/watch?v=9oreUA-pwLY">I’m a Voice Actor. Reddit Has Questions.</a> <span class="muted">· Brent Mukai</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/shorts/AoxV9rB-jYQ">it is time</a> <span class="muted">· Rebekah Quests</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/shorts/tyOzrz9mtzI">today the new Disney Lorcana set is available everywhere! Follow rebekahquests for all things</a> <span class="muted">· Rebekah Quests</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/shorts/UwSkqiWCy-c">such a simple way to keep these in your Disney Lorcana collection for each set! are you gonna try</a> <span class="muted">· Rebekah Quests</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/shorts/t-cAt4sShhI">send this to your Disney Lorcana bestie 😆</a> <span class="muted">· Rebekah Quests</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/shorts/iLkbGzOTI8U">what Qs do you have? 👇 I’ve found Ink Drops to be so fun and much simpler in practice than it may</a> <span class="muted">· Rebekah Quests</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/shorts/J885deDqCk0">you know I love vaultxhq binders - and the next Pre-Order is open today! Perfect for TCG collectors</a> <span class="muted">· Rebekah Quests</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/shorts/07ySAj-PIag">PSA: most people don’t get the big hits… BUT I HOPE YOU DO 🫶</a> <span class="muted">· Rebekah Quests</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/watch?v=dE4vueLvbSs">Is Hyperia Really Worth IT??  (Lorcana MARKET WATCH &amp; NEWS) - Ep. 251 10/23</a> <span class="muted">· Lorcana Goons</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/watch?v=GaIyD3lG9A4">LIVE Hyperia City Testing</a> <span class="muted">· Lorcana Goons</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/watch?v=xkspcce3YJU">Pro Level Decks To Try! - Meta Watch Monday / Disney Lorcana</a> <span class="muted">· Lorcana Goons</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/watch?v=DcZRynLbE44">2-Case Disney Lorcana Showdown! | ROK Tournament Gameplay.</a> <span class="muted">· The Illumiteers</span></li>
+    <li><span class="tag">youtube</span><a href="https://www.youtube.com/watch?v=dGrGhlHcpO8">Hyperia City Hype with Team Descent! | Let&#39;s Talk Lorcana #156</a> <span class="muted">· The Illumiteers</span></li>
+  </ul>
+
+  <h2>Sources</h2>
+  <ol class="sources">
+    <li id="src-1"><span class="tag">Web</span><a href="https://lorcanaplayer.com/set/hyperia-city/" target="_blank" rel="noopener">Disney Lorcana Hyperia City Set » Lorcana Player</a> <span class="muted">· lorcanaplayer.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-2"><span class="tag">YouTube</span><a href="https://www.youtube.com/shorts/cCcRG8nQ8C4" target="_blank" rel="noopener">happy Hyperia City release day! now available everywhere!! ✨</a> <span class="muted">· Rebekah Quests · Oct 23 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-3"><span class="tag">Reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xde6gx/love_to_see_it_at_hyperia_releases_at_essentially/" target="_blank" rel="noopener">Love to see it at Hyperia releases at essentially MSRP</a> <span class="muted">· GarfieldC99 · Oct 23 · reddit.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-4"><span class="tag">Web</span><a href="https://inkdecks.com/lorcana-metagame" target="_blank" rel="noopener">Lorcana Meta Report: Core Constructed October 2026</a> <span class="muted">· inkdecks.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-5"><span class="tag">Inbox</span><a href="https://inkdecks.com/lorcana-tournaments/heroes-ink-chapter-14-page-1-tournament-decks-364357" target="_blank" rel="noopener">Heroes Ink: &#34;Chapter 14 - Page 1&#34; @ Heroes Ink x Heroes INN Lorcana Top Decks Winner: Amber Amethyst</a> <span class="muted">· Oct 24 · inkdecks.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-6"><span class="tag">inkdecks</span><a href="https://inkdecks.com/lorcana-tournaments/heroes-ink-chapter-14-page-1-tournament-decks-364357" target="_blank" rel="noopener">Heroes Ink: “Chapter 14 - Page 1” @ Heroes Ink x Heroes INN</a> <span class="muted">· inkdecks · Oct 24 · inkdecks.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-7"><span class="tag">YouTube</span><a href="https://www.youtube.com/watch?v=L4UHruZ7HSE" target="_blank" rel="noopener">Best Hyperia City Decks! | Heroes Ink/Top Deck Keep | Top 8 Decklists</a> <span class="muted">· Lorcana Villain · Oct 25 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-8"><span class="tag">Web</span><a href="https://wdwnt.com/2026/10/disney-lorcana-collector-boosters-and-a-new-rarity-coming-in-2027-revealed/" target="_blank" rel="noopener">Disney Lorcana Collector Boosters and a New 2027 Rarity Revealed - WDW News Today</a> <span class="muted">· wdwnt.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-9"><span class="tag">Web</span><a href="https://bleedingcool.com/collectibles/ravensburger-reveals-new-details-for-disney-lorcana-collector-boosters/" target="_blank" rel="noopener">Ravensburger Reveals New Details for Disney Lorcana Collector Boosters</a> <span class="muted">· bleedingcool.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-10"><span class="tag">YouTube</span><a href="https://www.youtube.com/watch?v=BTcQ_k1qCuk" target="_blank" rel="noopener">Set 14 Meta BEGINS! | Iconic Clash | 16 Decklists</a> <span class="muted">· Lorcana Villain · Oct 22 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-11"><span class="tag">YouTube</span><a href="https://www.youtube.com/watch?v=6cIrMpouQwQ" target="_blank" rel="noopener">Disney Lorcana QWIC: Round 1 Frank Karsten (ES) vs Shane Downey (ES) SET 14</a> <span class="muted">· JDZ Quest · Oct 22 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-12"><span class="tag">Web</span><a href="https://inkdecks.com/lorcana-tournaments/quest-coast-iv-hyperia-city-tournament-decks-364364" target="_blank" rel="noopener">Quest Coast IV: Hyperia City @ Angry Goose Games Lorcana Top Decks</a> <span class="muted">· inkdecks.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-13"><span class="tag">YouTube</span><a href="https://www.youtube.com/watch?v=9TNmIbcQyr4" target="_blank" rel="noopener">Amber Ruby Got an Upgrade in Hyperia City - Disney Lorcana Deck</a> <span class="muted">· The Lore College · Oct 19 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-14"><span class="tag">Web</span><a href="https://inkdecks.com/lorcana-tournaments/win-2-cases-hyperia-city-core-tournament-tournament-decks-364365" target="_blank" rel="noopener">Win 2 Cases - Hyperia City Core Tournament @ Il Laboratorio Giochi Lorcana Top Decks</a> <span class="muted">· inkdecks.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-15"><span class="tag">YouTube</span><a href="https://www.youtube.com/shorts/yDAkzTqCW0U" target="_blank" rel="noopener">Flash is a new Steel STAPLE in Disney Lorcana!</a> <span class="muted">· Manifest TCG · Oct 23 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-16"><span class="tag">Reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xbj046/flash_is_busted/" target="_blank" rel="noopener">Flash is busted</a> <span class="muted">· mootxico · Oct 21 · reddit.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-17"><span class="tag">YouTube</span><a href="https://www.youtube.com/shorts/-qlyto2dUts" target="_blank" rel="noopener">Max Goof Is One of THE Most Powerful Cards in Disney Lorcana!</a> <span class="muted">· Manifest TCG · Oct 22 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-18"><span class="tag">YouTube</span><a href="https://www.youtube.com/watch?v=DDbRaKDU184" target="_blank" rel="noopener">Is Ruby Emerald Real!? We Built 15 New Hyperia City Decks | Podcana 161 | Disney Lorcana</a> <span class="muted">· Podcana Podcast · Oct 22 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-19"><span class="tag">YouTube</span><a href="https://www.youtube.com/watch?v=lVMhLuwSTH8" target="_blank" rel="noopener">Alter Academy 72 (Featuring Xenulous on Hyperia City Emerald/Amethyst!)</a> <span class="muted">· JBaum · Oct 21 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-20"><span class="tag">inkdecks</span><a href="https://inkdecks.com/lorcana-tournaments/through-the-decades-ccq-infinity-5k-swiss-standings-tournament-decks-364358" target="_blank" rel="noopener">Through The Decades CCQ Infinity 5K - Swiss Standings @ Through The Decades Sports Cards &amp; Gaming</a> <span class="muted">· inkdecks · Oct 24 · inkdecks.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-21"><span class="tag">YouTube</span><a href="https://www.youtube.com/watch?v=pgzxYcFBqs8" target="_blank" rel="noopener">Disney Lorcana QWIC: Round 1 SKY  (ER) vs R_M_B (ES) SET 14</a> <span class="muted">· JDZ Quest · Oct 24 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-22"><span class="tag">YouTube</span><a href="https://www.youtube.com/watch?v=MiMTGsi23vs" target="_blank" rel="noopener">Disney Lorcana QWIC: Round 1 Fungus (RETRO) vs ACE (ES) SET 14</a> <span class="muted">· JDZ Quest · Oct 23 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-23"><span class="tag">YouTube</span><a href="https://www.youtube.com/watch?v=1Zd9fsRBhhg" target="_blank" rel="noopener">Disney Lorcana QWIC: Round 1 Diego LEVEL 9001 (PS) vs Cav0 (EmSa) SET 14</a> <span class="muted">· JDZ Quest · Oct 25 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-24"><span class="tag">Web</span><a href="https://lorcanaplayer.com/into-the-inkdark-card-list-lorcana-set-15/" target="_blank" rel="noopener">Into the Inkdark Card List</a> <span class="muted">· lorcanaplayer.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-25"><span class="tag">Reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xec2bs/new_into_the_inkdark_card/" target="_blank" rel="noopener">New Into the Inkdark card!</a> <span class="muted">· Maikenvv · Oct 24 · reddit.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-26"><span class="tag">Reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xa4e56/d23_2026_boxes_and_foil_playmat_pooh_rerelease/" target="_blank" rel="noopener">D23 2026 boxes and Foil Playmat Pooh rerelease via EQL</a> <span class="muted">· GarfieldC99 · Oct 19 · reddit.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-27"><span class="tag">YouTube</span><a href="https://www.youtube.com/watch?v=KBjWQxYRq3Y" target="_blank" rel="noopener">119th Rule of Villainy - Flash Mob at the Smithy</a> <span class="muted">· Rules of Villainy Podcast · Oct 23 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-28"><span class="tag">Reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xdau16/pixelborn_connect_is_now_in_your_browser/" target="_blank" rel="noopener">Pixelborn Connect is now in your browser</a> <span class="muted">· pavelkolev · Oct 23 · reddit.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-29"><span class="tag">YouTube</span><a href="https://www.youtube.com/watch?v=uSPKQqnTbEA" target="_blank" rel="noopener">ICL Season 4 Round 6: ETB vs Triad - INFINITY WEEK!</a> <span class="muted">· Illumineer Champions League · Oct 22 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-30"><span class="tag">YouTube</span><a href="https://www.youtube.com/watch?v=nDO7YHXTSPU" target="_blank" rel="noopener">ICL Season 4 Round 6: World Class Cards vs Manifest - INFINITY WEEK!</a> <span class="muted">· Illumineer Champions League · Oct 21 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-31"><span class="tag">YouTube</span><a href="https://www.youtube.com/watch?v=JXASKxzFjjU" target="_blank" rel="noopener">Hyperia City Tier List Disney Lorcana Metagame Breakdown</a> <span class="muted">· The Lore College · Oct 22 · youtube.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-32"><span class="tag">Reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xcoo14/lorcana_opening_feeling/" target="_blank" rel="noopener">Lorcana opening feeling</a> <span class="muted">· Lg_Unit · Oct 22 · reddit.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-33"><span class="tag">Reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xa2wr6/lgs_holding_back_hyperia_city/" target="_blank" rel="noopener">LGS holding back Hyperia City</a> <span class="muted">· naehrstff · Oct 19 · reddit.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+    <li id="src-34"><span class="tag">Reddit</span><a href="https://www.reddit.com/r/Lorcana/comments/1xav5vj/locations/" target="_blank" rel="noopener">Locations</a> <span class="muted">· Nexu501 · Oct 20 · reddit.com</span><a class="back" href="#" hidden>↩ Back to text</a></li>
+  </ol>
+
+  <footer>
+    Summaries written by Claude from the linked sources. Follow the links before relying on a detail.
+    Generated 2026-10-26 13:06 UTC. <a href="../index.html">All digests</a>
+  </footer>
+</main>
+<script type="application/json" id="cite-data">[{"kind": "Web", "meta": "lorcanaplayer.com", "n": 1, "preview": "Hyperia City (Set 14, with Coco, the new ink drops mechanic and the Adventurous keyword) went on sale at all retailers on October 23, a week after its October 16 prerelease.", "title": "Disney Lorcana Hyperia City Set \u00bb Lorcana Player", "url": "https://lorcanaplayer.com/set/hyperia-city/"}, {"kind": "YouTube", "meta": "Rebekah Quests \u00b7 Oct 23 \u00b7 youtube.com", "n": 2, "preview": "happy Hyperia City release day! now available everywhere!! \u2728", "title": "happy Hyperia City release day! now available everywhere!! \u2728", "url": "https://www.youtube.com/shorts/cCcRG8nQ8C4"}, {"kind": "Reddit", "meta": "GarfieldC99 \u00b7 Oct 23 \u00b7 reddit.com", "n": 3, "preview": "Guys pls don\u2019t pay anything over MSRP this set it seems will be easy to find. I made a post this last week about how I thought this set would be widely available at just slightly over MSRP well seems even I overestimated Hyperia lol. It\u2019s\u2026", "title": "Love to see it at Hyperia releases at essentially MSRP", "url": "https://www.reddit.com/r/Lorcana/comments/1xde6gx/love_to_see_it_at_hyperia_releases_at_essentially/"}, {"kind": "Web", "meta": "inkdecks.com", "n": 4, "preview": "The first Hyperia City Core Constructed meta report has Emerald-Steel Evasive on top at about 23% of the field, followed by Amber-Emerald Circle (about 15%) and Amber-Sapphire Princesses.", "title": "Lorcana Meta Report: Core Constructed October 2026", "url": "https://inkdecks.com/lorcana-metagame"}, {"kind": "Inbox", "meta": "Oct 24 \u00b7 inkdecks.com", "n": 5, "preview": "Heroes Ink: \"Chapter 14 - Page 1\" @ Heroes Ink x Heroes INN Lorcana Top Decks Winner: Amber Amethyst", "title": "Heroes Ink: \"Chapter 14 - Page 1\" @ Heroes Ink x Heroes INN Lorcana Top Decks Winner: Amber Amethyst", "url": "https://inkdecks.com/lorcana-tournaments/heroes-ink-chapter-14-page-1-tournament-decks-364357"}, {"kind": "inkdecks", "meta": "inkdecks \u00b7 Oct 24 \u00b7 inkdecks.com", "n": 6, "preview": "Event on October 24, 2026 in DE, 36 players. Winner: TT_Egelim with a deck titled \u201cMakoya 0-3\u201d.", "title": "Heroes Ink: \u201cChapter 14 - Page 1\u201d @ Heroes Ink x Heroes INN", "url": "https://inkdecks.com/lorcana-tournaments/heroes-ink-chapter-14-page-1-tournament-decks-364357"}, {"kind": "YouTube", "meta": "Lorcana Villain \u00b7 Oct 25 \u00b7 youtube.com", "n": 7, "preview": "Welcome to Lorcana Villain! A channel dedicated to the Disney Lorcana TCG! Today we are taking a look at the 8 decklists from two Set 14 Core consructed events which took place this weekend! ----------------------------------- Follow me on\u2026", "title": "Best Hyperia City Decks! | Heroes Ink/Top Deck Keep | Top 8 Decklists", "url": "https://www.youtube.com/watch?v=L4UHruZ7HSE"}, {"kind": "Web", "meta": "wdwnt.com", "n": 8, "preview": "Co-founder Ryan Miller confirmed that Collector Boosters and the new Illustrious rarity arrive with Into the Inkdark on February 12, 2027, sold only at Ravensburger Play Hub stores, Ravensburger\u0027s online store and some Disney locations\u2026", "title": "Disney Lorcana Collector Boosters and a New 2027 Rarity Revealed - WDW News Today", "url": "https://wdwnt.com/2026/10/disney-lorcana-collector-boosters-and-a-new-rarity-coming-in-2027-revealed/"}, {"kind": "Web", "meta": "bleedingcool.com", "n": 9, "preview": "Each Collector Booster has 12 special foil cards and better odds at Enchanteds and Iconics, and 6 serialized Illustrious characters will get 23 copies each (138 worldwide), starting with Maleficent \u2013 Biding Her Time (publish date not\u2026", "title": "Ravensburger Reveals New Details for Disney Lorcana Collector Boosters", "url": "https://bleedingcool.com/collectibles/ravensburger-reveals-new-details-for-disney-lorcana-collector-boosters/"}, {"kind": "YouTube", "meta": "Lorcana Villain \u00b7 Oct 22 \u00b7 youtube.com", "n": 10, "preview": "Welcome to Lorcana Villain! A channel dedicated to the Disney Lorcana TCG! Today we are taking a look at the 16 decklists submitted for the Quest World Iconic Clash invitational! Make sure to catch the matches on JDZ\u0027s youtube channel\u2026", "title": "Set 14 Meta BEGINS! | Iconic Clash | 16 Decklists", "url": "https://www.youtube.com/watch?v=BTcQ_k1qCuk"}, {"kind": "YouTube", "meta": "JDZ Quest \u00b7 Oct 22 \u00b7 youtube.com", "n": 11, "preview": "Welcome to the Quest World Iconic Clash, a Top 16 single-elimination Disney Lorcana tournament featuring some of the best players in the game! In this round, three-time Disney Lorcana champion Frank Carsten takes on rising star Shane\u2026", "title": "Disney Lorcana QWIC: Round 1 Frank Karsten (ES) vs Shane Downey (ES) SET 14", "url": "https://www.youtube.com/watch?v=6cIrMpouQwQ"}, {"kind": "Web", "meta": "inkdecks.com", "n": 12, "preview": "At an early 27-player Hyperia City event, Steel-Emerald Evasive did well, and Detectives and Princesses also made the top cut.", "title": "Quest Coast IV: Hyperia City @ Angry Goose Games Lorcana Top Decks", "url": "https://inkdecks.com/lorcana-tournaments/quest-coast-iv-hyperia-city-tournament-decks-364364"}, {"kind": "YouTube", "meta": "The Lore College \u00b7 Oct 19 \u00b7 youtube.com", "n": 13, "preview": "https://dreamborn.ink/decks/uj2IZTqnQD7pyFHzmmWQ Use Promo Code MRBURNS at Checkout on Dinoskin.games to Save 10% off. www.patreon.com/c/thelorecollege Contact Rubin for your post production needs on Instagram @THG_Reckless_Ruby The Lore\u2026", "title": "Amber Ruby Got an Upgrade in Hyperia City - Disney Lorcana Deck", "url": "https://www.youtube.com/watch?v=9TNmIbcQyr4"}, {"kind": "Web", "meta": "inkdecks.com", "n": 14, "preview": "At this Italian Hyperia City Core event, Amber-Emerald Circle and Amber-Amethyst Merida took most of the top spots, a sign of how the new format is shaping up in Europe.", "title": "Win 2 Cases - Hyperia City Core Tournament @ Il Laboratorio Giochi Lorcana Top Decks", "url": "https://inkdecks.com/lorcana-tournaments/win-2-cases-hyperia-city-core-tournament-tournament-decks-364365"}, {"kind": "YouTube", "meta": "Manifest TCG \u00b7 Oct 23 \u00b7 youtube.com", "n": 15, "preview": "In our sixth episode of Manifesting, we talk about our favorite cards from Hyperia City and why they are so powerful! Social Links: https://x.com/tcgmanifest https://metafy.gg/@manifesttcg #lorcana #disneylorcana #lorcanatcg #hyperiacity", "title": "Flash is a new Steel STAPLE in Disney Lorcana!", "url": "https://www.youtube.com/shorts/yDAkzTqCW0U"}, {"kind": "Reddit", "meta": "mootxico \u00b7 Oct 21 \u00b7 reddit.com", "n": 16, "preview": "https://preview.redd.it/qk6yw4cnmswh1.png?width=473\u0026format=png\u0026auto=webp\u0026s=4959cd60036935f70836a4d44db7832f0dcdb927 why is this card so overtuned? it costs only 2 and you effectively get a 3/3 (except resist 1 is way better), it quests for\u2026", "title": "Flash is busted", "url": "https://www.reddit.com/r/Lorcana/comments/1xbj046/flash_is_busted/"}, {"kind": "YouTube", "meta": "Manifest TCG \u00b7 Oct 22 \u00b7 youtube.com", "n": 17, "preview": "It\u2019s time to crack open a Disney Lorcana Hyperia City Booster Box and see what magic is waiting inside! Join Freddy as he open packs and checks out the newest cards! Manifest Metafy: https://metafy.gg/@manifesttcg Social Links:\u2026", "title": "Max Goof Is One of THE Most Powerful Cards in Disney Lorcana!", "url": "https://www.youtube.com/shorts/-qlyto2dUts"}, {"kind": "YouTube", "meta": "Podcana Podcast \u00b7 Oct 22 \u00b7 youtube.com", "n": 18, "preview": "This week on Podcana, Garrick and Sky rank the decks in Hyperia City! Any questions for next week? \ud83d\udc40 Let us know down below \ud83d\udc47 \u25baGarrick\u0027s Guide https://mfy.gg/guides/view/the-ultimate-amber-emerald-guide-disney-lo-6wqjaqHAOs2\u2026", "title": "Is Ruby Emerald Real!? We Built 15 New Hyperia City Decks | Podcana 161 | Disney Lorcana", "url": "https://www.youtube.com/watch?v=DDbRaKDU184"}, {"kind": "YouTube", "meta": "JBaum \u00b7 Oct 21 \u00b7 youtube.com", "n": 19, "preview": "Welcome to Alter Academy, where we bring in a Special Guest each week to go over how to properly Alter vs the most popular decks in the Disney Lorcana Trading Card Game! This weeks Special Guest is the Xenulous on Emerald/Amethyst Retro.\u2026", "title": "Alter Academy 72 (Featuring Xenulous on Hyperia City Emerald/Amethyst!)", "url": "https://www.youtube.com/watch?v=lVMhLuwSTH8"}, {"kind": "inkdecks", "meta": "inkdecks \u00b7 Oct 24 \u00b7 inkdecks.com", "n": 20, "preview": "Event on October 24, 2026 in US, 79 players. Winner: Darian with a deck titled \u201cCortisol Down, Paws Up\u201d.", "title": "Through The Decades CCQ Infinity 5K - Swiss Standings @ Through The Decades Sports Cards \u0026 Gaming", "url": "https://inkdecks.com/lorcana-tournaments/through-the-decades-ccq-infinity-5k-swiss-standings-tournament-decks-364358"}, {"kind": "YouTube", "meta": "JDZ Quest \u00b7 Oct 24 \u00b7 youtube.com", "n": 21, "preview": "Quest World Iconic Clash | Sky vs. R_M_B | Disney Lorcana Trading Card Game Welcome to the Quest World Iconic Clash, a Top 16 single-elimination Disney Lorcana Trading Card Game tournament featuring some of the best players in the world!\u2026", "title": "Disney Lorcana QWIC: Round 1 SKY  (ER) vs R_M_B (ES) SET 14", "url": "https://www.youtube.com/watch?v=pgzxYcFBqs8"}, {"kind": "YouTube", "meta": "JDZ Quest \u00b7 Oct 23 \u00b7 youtube.com", "n": 22, "preview": "Quest World Iconic Clash | Fungus vs. Ace 103 | Disney Lorcana Trading Card Game Welcome to the Quest World Iconic Clash, a Top 16 single-elimination Disney Lorcana Trading Card Game tournament featuring some of the best players in the\u2026", "title": "Disney Lorcana QWIC: Round 1 Fungus (RETRO) vs ACE (ES) SET 14", "url": "https://www.youtube.com/watch?v=MiMTGsi23vs"}, {"kind": "YouTube", "meta": "JDZ Quest \u00b7 Oct 25 \u00b7 youtube.com", "n": 23, "preview": "Quest World Iconic Clash | Level 9001 Diego Saz vs. Cav0 | Disney Lorcana Trading Card Game Welcome to the Quest World Iconic Clash, a Top 16 single-elimination Disney Lorcana Trading Card Game tournament featuring some of the best players\u2026", "title": "Disney Lorcana QWIC: Round 1 Diego LEVEL 9001 (PS) vs Cav0 (EmSa) SET 14", "url": "https://www.youtube.com/watch?v=1Zd9fsRBhhg"}, {"kind": "Web", "meta": "lorcanaplayer.com", "n": 24, "preview": "Lorcana Player\u0027s tracker for Set 15 reveals is live, covering the villain-themed set that brings in Onward and is due in early 2027.", "title": "Into the Inkdark Card List", "url": "https://lorcanaplayer.com/into-the-inkdark-card-list-lorcana-set-15/"}, {"kind": "Reddit", "meta": "Maikenvv \u00b7 Oct 24 \u00b7 reddit.com", "n": 25, "preview": "Source: https://www.instagram.com/p/De4ddwWivbd/", "title": "New Into the Inkdark card!", "url": "https://www.reddit.com/r/Lorcana/comments/1xec2bs/new_into_the_inkdark_card/"}, {"kind": "Reddit", "meta": "GarfieldC99 \u00b7 Oct 19 \u00b7 reddit.com", "n": 26, "preview": "For those who couldn\u2019t make it this should give you another shot or at least lower prices by a lot for these.", "title": "D23 2026 boxes and Foil Playmat Pooh rerelease via EQL", "url": "https://www.reddit.com/r/Lorcana/comments/1xa4e56/d23_2026_boxes_and_foil_playmat_pooh_rerelease/"}, {"kind": "YouTube", "meta": "Rules of Villainy Podcast \u00b7 Oct 23 \u00b7 youtube.com", "n": 27, "preview": "Pre-release is over so it\u2019s time to roll into Hyperia City and begin brewing decks! Join Andy, Brad and Vince as they walk through the latest news and dive into some decks by Brennan DeCandio and give their opinions on the early meta!\u2026", "title": "119th Rule of Villainy - Flash Mob at the Smithy", "url": "https://www.youtube.com/watch?v=KBjWQxYRq3Y"}, {"kind": "Reddit", "meta": "pavelkolev \u00b7 Oct 23 \u00b7 reddit.com", "n": 28, "preview": "You can now enjoy ranked webcam games in your browser, which also includes an all time favourite feature for content creators - you can hide your hand from your opponent so you can show it to your viewers and discuss it. You can enjoy it\u2026", "title": "Pixelborn Connect is now in your browser", "url": "https://www.reddit.com/r/Lorcana/comments/1xdau16/pixelborn_connect_is_now_in_your_browser/"}, {"kind": "YouTube", "meta": "Illumineer Champions League \u00b7 Oct 22 \u00b7 youtube.com", "n": 29, "preview": "LIVE Disney Lorcana! ICL Season 4 Round 6: ETB vs Triad - INFINITY WEEK! ICL Decklists : https://inkdecks.com/organizations/organization-illumineer-champions-league-icl-584 Want to try and get your team in? or trying casting or helping out\u2026", "title": "ICL Season 4 Round 6: ETB vs Triad - INFINITY WEEK!", "url": "https://www.youtube.com/watch?v=uSPKQqnTbEA"}, {"kind": "YouTube", "meta": "Illumineer Champions League \u00b7 Oct 21 \u00b7 youtube.com", "n": 30, "preview": "LIVE Disney Lorcana! ICL Season 4 Round 6: World Class Cards vs Manifest - INFINITY WEEK! ICL Decklists : https://inkdecks.com/organizations/organization-illumineer-champions-league-icl-584 Want to try and get your team in? or trying\u2026", "title": "ICL Season 4 Round 6: World Class Cards vs Manifest - INFINITY WEEK!", "url": "https://www.youtube.com/watch?v=nDO7YHXTSPU"}, {"kind": "YouTube", "meta": "The Lore College \u00b7 Oct 22 \u00b7 youtube.com", "n": 31, "preview": "Use Promo Code MRBURNS at Checkout on Dinoskin.games to Save 10% off. www.patreon.com/c/thelorecollege Contact Rubin for your post production needs on Instagram @THG_Reckless_Ruby The Lore College uses trademarks and/or copyrights\u2026", "title": "Hyperia City Tier List Disney Lorcana Metagame Breakdown", "url": "https://www.youtube.com/watch?v=JXASKxzFjjU"}, {"kind": "Reddit", "meta": "Lg_Unit \u00b7 Oct 22 \u00b7 reddit.com", "n": 32, "preview": "Hey all, Just wanted to share a bit my experience and also ask a question. We started collecting Lorcana with my GF since Vine set. For Hyperia city we have bought 1 display of 24 boosters for each of us. We were a bit disappointed by some\u2026", "title": "Lorcana opening feeling", "url": "https://www.reddit.com/r/Lorcana/comments/1xcoo14/lorcana_opening_feeling/"}, {"kind": "Reddit", "meta": "naehrstff \u00b7 Oct 19 \u00b7 reddit.com", "n": 33, "preview": "Me and my kids went to a local game store today and asked for Hyperia City and they did not give us anything. They said they are holding back their products for their people who might want some and then get into public sale when they see\u2026", "title": "LGS holding back Hyperia City", "url": "https://www.reddit.com/r/Lorcana/comments/1xa2wr6/lgs_holding_back_hyperia_city/"}, {"kind": "Reddit", "meta": "Nexu501 \u00b7 Oct 20 \u00b7 reddit.com", "n": 34, "preview": "Hi i have got a general deckbuilding question. It seems to me that most meta Decks or popular decks have no or at least very rarely any locations used in them. Are Locations considered bad or not worth the Slot? Or are they too nieche?\u2026", "title": "Locations", "url": "https://www.reddit.com/r/Lorcana/comments/1xav5vj/locations/"}]</script>
+<script>
+// Citation popovers: hover or focus a [n] to preview its source. The title opens
+// the source in a new tab; "Jump to source" scrolls to it in the Sources list,
+// which is highlighted with a link back to where you were reading.
+(function () {
+  var data = {};
+  JSON.parse(document.getElementById("cite-data").textContent).forEach(function (s) { data[s.n] = s; });
+  var pop = document.createElement("div");
+  pop.className = "cite-pop";
+  pop.id = "cite-pop";
+  pop.setAttribute("role", "dialog");
+  pop.hidden = true;
+  document.body.appendChild(pop);
+
+  var current = null, hideTimer = null, showTimer = null, lastCite = null;
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text) e.textContent = text;
+    return e;
+  }
+
+  function show(cite) {
+    clearTimeout(hideTimer);
+    var s = data[cite.dataset.n];
+    if (!s) return;
+    current = cite;
+    pop.replaceChildren();
+    var head = el("div", "cite-pop-head");
+    head.append(el("span", "tag", s.kind));
+    if (s.meta) head.append(el("span", "muted", s.meta));
+    var title = el("a", "cite-pop-title", s.title);
+    title.href = s.url; title.target = "_blank"; title.rel = "noopener";
+    title.append(el("span", "cite-pop-ext", " ↗"));
+    pop.append(head, title);
+    if (s.preview) pop.append(el("p", "cite-pop-preview", s.preview));
+    var jump = el("a", "cite-pop-jump", "Jump to source [" + s.n + "] ↓");
+    jump.href = "#src-" + s.n;
+    jump.addEventListener("click", function () { lastCite = cite; hide(true); });
+    pop.append(jump);
+    // Sit right after the citation so Tab moves from [n] into the popover's links.
+    cite.parentNode.after(pop);
+    pop.hidden = false;
+    cite.setAttribute("aria-expanded", "true");
+    cite.setAttribute("aria-controls", "cite-pop");
+    place(cite);
+  }
+
+  function place(cite) {
+    var r = cite.getBoundingClientRect(), m = 8;
+    pop.style.left = "0px"; pop.style.top = "0px";
+    var w = pop.offsetWidth, h = pop.offsetHeight;
+    var left = Math.min(Math.max(m, r.left + r.width / 2 - w / 2), window.innerWidth - w - m);
+    var top = r.bottom + 6;
+    if (top + h > window.innerHeight - m && r.top - h - 6 > m) top = r.top - h - 6;
+    pop.style.left = left + window.scrollX + "px";
+    pop.style.top = top + window.scrollY + "px";
+  }
+
+  function hide(now) {
+    clearTimeout(showTimer);
+    clearTimeout(hideTimer);
+    var go = function () {
+      pop.hidden = true;
+      if (current) current.setAttribute("aria-expanded", "false");
+      current = null;
+    };
+    now ? go() : (hideTimer = setTimeout(go, 200));
+  }
+
+  var lastPointer = "mouse";
+  document.addEventListener("pointerdown", function (e) { lastPointer = e.pointerType; }, true);
+
+  document.querySelectorAll("a.cite").forEach(function (cite) {
+    cite.setAttribute("aria-expanded", "false");
+    cite.addEventListener("mouseenter", function () {
+      if (lastPointer !== "mouse") return;
+      clearTimeout(hideTimer);
+      showTimer = setTimeout(function () { show(cite); }, 120);
+    });
+    cite.addEventListener("mouseleave", function () { clearTimeout(showTimer); hide(); });
+    cite.addEventListener("focus", function () { if (lastPointer === "mouse" || !current) show(cite); });
+    cite.addEventListener("click", function (e) {
+      // On touch screens the first tap previews; tapping the same [n] again jumps.
+      if (lastPointer !== "mouse" && current !== cite) { e.preventDefault(); show(cite); return; }
+      lastCite = cite;
+      hide(true);
+    });
+  });
+
+  pop.addEventListener("mouseenter", function () { clearTimeout(hideTimer); });
+  pop.addEventListener("mouseleave", function () { if (lastPointer === "mouse") hide(); });
+  pop.addEventListener("focusout", function (e) {
+    if (!pop.contains(e.relatedTarget) && e.relatedTarget !== current) hide();
+  });
+  document.addEventListener("focusout", function (e) {
+    if (e.target === current && !pop.contains(e.relatedTarget)) hide();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && current) { var c = current; hide(true); c.focus(); }
+  });
+  document.addEventListener("click", function (e) {
+    if (current && !pop.contains(e.target) && e.target !== current) hide(true);
+  });
+  window.addEventListener("resize", function () { if (current) place(current); });
+
+  // After a jump, offer a way back to the citation that was clicked.
+  function markTarget() {
+    document.querySelectorAll("ol.sources a.back").forEach(function (b) { b.hidden = true; });
+    var li = location.hash.indexOf("#src-") === 0 && document.getElementById(location.hash.slice(1));
+    if (li && lastCite) li.querySelector("a.back").hidden = false;
+  }
+  window.addEventListener("hashchange", markTarget);
+  document.querySelectorAll("ol.sources a.back").forEach(function (b) {
+    b.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (!lastCite) return;
+      b.hidden = true;
+      lastCite.scrollIntoView({ block: "center" });
+      lastCite.focus({ preventScroll: true });
+    });
+  });
+})();
+</script>
+</body>
+</html>
