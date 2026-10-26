@@ -6,15 +6,75 @@
   {
    "id": "inkdecks-1",
    "source": "inkdecks",
-   "title": "Through The Decades CCQ Infinity 5K - Swiss Standings @ Through The Decades Sports Cards & Gaming",
-   "url": "https://inkdecks.com/lorcana-tournaments/through-the-decades-ccq-infinity-5k-swiss-standings-tournament-decks-364358",
+   "title": "Al Ritmo de la Magia @ El Sombrero del Aprendiz",
+   "url": "https://inkdecks.com/lorcana-tournaments/al-ritmo-de-la-magia-tournament-decks-364369",
+   "author": "inkdecks",
+   "published": "2026-10-24T00:00:00Z",
+   "text": "Event on October 24, 2026 in ES, 50 players. Winner: LBT_Elros with a deck titled “GS”.",
+   "priority": false
+  },
+  {
+   "id": "inkdecks-2",
+   "source": "inkdecks",
+   "title": "Win 2 Cases - Hyperia City Core Tournament @ Il Laboratorio Giochi",
+   "url": "https://inkdecks.com/lorcana-tournaments/win-2-cases-hyperia-city-core-tournament-tournament-decks-364365",
+   "author": "inkdecks",
+   "published": "2026-10-25T00:00:00Z",
+   "text": "Event on October 25, 2026 in IT, 30 players. Winner: GabryCu1o with a deck titled “ILYS”.",
+   "priority": false
+  },
+  {
+   "id": "inkdecks-3",
+   "source": "inkdecks",
+   "title": "Quest Coast IV: Hyperia City @ Angry Goose Games",
+   "url": "https://inkdecks.com/lorcana-tournaments/quest-coast-iv-hyperia-city-tournament-decks-364364",
+   "author": "inkdecks",
+   "published": "2026-10-24T00:00:00Z",
+   "text": "Event on October 24, 2026 in US, 27 players. Winner: [FT20] JP with a deck titled “Set 14 GS”.",
+   "priority": false
+  },
+  {
+   "id": "inkdecks-4",
+   "source": "inkdecks",
+   "title": "Grand Tournoi CCQ Lorca-Breizh - Swiss Standings @ Casa Familia",
+   "url": "https://inkdecks.com/lorcana-tournaments/grand-tournoi-ccq-lorca-breizh-swiss-standings-tournament-decks-364362",
+   "author": "inkdecks",
+   "published": "2026-10-24T00:00:00Z",
+   "text": "Event on October 24, 2026 in FR, 144 players. Winner: BlingGuest with a deck titled “Canarder la Bretagne”.",
+   "priority": false
+  },
+  {
+   "id": "inkdecks-5",
+   "source": "inkdecks",
+   "title": "Bubble Planet Lorcana Set Championship - Wilds Unknown @ Bubble Planet",
+   "url": "https://inkdecks.com/lorcana-tournaments/bubble-planet-lorcana-set-championship-wilds-unknown-tournament-decks-364361",
+   "author": "inkdecks",
+   "published": "2026-10-24T00:00:00Z",
+   "text": "Event on October 24, 2026 in BR, 14 players. Winner: Joao Geleia with a deck titled “Steel Amber”.",
+   "priority": false
+  },
+  {
+   "id": "inkdecks-6",
+   "source": "inkdecks",
+   "title": "Road To Lorcana 1 - Saison 14 @ Disney Lorcana TCG France",
+   "url": "https://inkdecks.com/lorcana-tournaments/road-to-lorcana-1-saison-14-tournament-decks-364359",
+   "author": "inkdecks",
+   "published": "2026-10-24T00:00:00Z",
+   "text": "Event on October 24, 2026 in FR, 10 players. Winner: [EC] Gon20 with a deck titled “Rea”.",
+   "priority": false
+  },
+  {
+   "id": "inkdecks-7",
+   "source": "inkdecks",
+   "title": "Through The Decades CCQ Infinity 5K @ Through The Decades Sports Cards & Gaming",
+   "url": "https://inkdecks.com/lorcana-tournaments/through-the-decades-ccq-infinity-5k-tournament-decks-364358",
    "author": "inkdecks",
    "published": "2026-10-24T00:00:00Z",
    "text": "Event on October 24, 2026 in US, 79 players. Winner: Darian with a deck titled “Cortisol Down, Paws Up”.",
    "priority": false
   },
   {
-   "id": "inkdecks-2",
+   "id": "inkdecks-8",
    "source": "inkdecks",
    "title": "Heroes Ink: “Chapter 14 - Page 1” @ Heroes Ink x Heroes INN",
    "url": "https://inkdecks.com/lorcana-tournaments/heroes-ink-chapter-14-page-1-tournament-decks-364357",
@@ -24,7 +84,17 @@
    "priority": false
   },
   {
-   "id": "inkdecks-3",
+   "id": "inkdecks-9",
+   "source": "inkdecks",
+   "title": "Top Deck Keep - Scaling Case Event @ Top Deck Keep",
+   "url": "https://inkdecks.com/lorcana-tournaments/top-deck-keep-scaling-case-event-tournament-decks-364356",
+   "author": "inkdecks",
+   "published": "2026-10-24T00:00:00Z",
+   "text": "Event on October 24, 2026 in US, 31 players. Winner: Kaiiku with a deck titled “Loses On Duels”.",
+   "priority": false
+  },
+  {
+   "id": "inkdecks-10",
    "source": "inkdecks",
    "title": "Inker Belles' Halloween Event @ Inker Belles",
    "url": "https://inkdecks.com/lorcana-tournaments/inker-belles-halloween-event-tournament-decks-364354",
@@ -34,7 +104,7 @@
    "priority": false
   },
   {
-   "id": "inkdecks-4",
+   "id": "inkdecks-11",
    "source": "inkdecks",
    "title": "Hyperia City Weekly Play @ Gemini Games",
    "url": "https://inkdecks.com/lorcana-tournaments/hyperia-city-weekly-play-tournament-decks-364351",
@@ -286,11 +356,11 @@
   {
    "id": "reddit-25",
    "source": "reddit",
-   "title": "No foil connecting cards in Hyperia City?",
-   "url": "https://www.reddit.com/r/Lorcana/comments/1xd3uds/no_foil_connecting_cards_in_hyperia_city/",
-   "author": "RefrigeratorPast5394",
-   "published": "2026-10-23T04:03:38Z",
-   "text": "In the last few sets, there have been foils missing a border(s) and connecting to another card. I haven't seen any yet in Hyperia City after opening several boxes. Is that gone in this set? I loved them",
+   "title": "Raging Storm",
+   "url": "https://www.reddit.com/r/Lorcana/comments/1xfk5nw/raging_storm/",
+   "author": "JustRoo136",
+   "published": "2026-10-26T01:49:11Z",
+   "text": "What's everyone's opinion on Raging Storm? About every other game I play online Im getting Raging Stormed twice, even three times a game. It feels like this set with all the discard/draw options, its become even more troublesome to play against and there's not much counter play against it.",
    "priority": false
   },
   {
@@ -696,31 +766,31 @@
   {
    "id": "web-1",
    "source": "web",
-   "title": "Lorcana Meta Report: Core Constructed October 2026",
-   "url": "https://inkdecks.com/lorcana-metagame",
+   "title": "ICv2: 'Disney Lorcana: Into the Inkdark' Hits Preorder",
+   "url": "https://icv2.com/articles/news/view/63708/disney-lorcana-into-inkdark-hits-preorder",
    "author": "",
    "published": null,
-   "text": "The first Hyperia City Core Constructed meta report has Emerald-Steel Evasive on top at about 23% of the field, followed by Amber-Emerald Circle (about 15%) and Amber-Sapphire Princesses.",
+   "text": "Into the Inkdark is now on preorder ahead of its February 12, 2027 release, bringing the first Collector Boosters and the serialized Illustrious rarity, with only 23 of each card printed.",
    "priority": false
   },
   {
    "id": "web-2",
    "source": "web",
-   "title": "Disney Lorcana Collector Boosters and a New 2027 Rarity Revealed - WDW News Today",
-   "url": "https://wdwnt.com/2026/10/disney-lorcana-collector-boosters-and-a-new-rarity-coming-in-2027-revealed/",
+   "title": "Disney Lorcana Hyperia City Set » Lorcana Player",
+   "url": "https://lorcanaplayer.com/set/hyperia-city/",
    "author": "",
    "published": null,
-   "text": "Co-founder Ryan Miller confirmed that Collector Boosters and the new Illustrious rarity arrive with Into the Inkdark on February 12, 2027, sold only at Ravensburger Play Hub stores, Ravensburger's online store and some Disney locations (October 2026; the exact day isn't confirmed).",
+   "text": "Set 14, Hyperia City, launched everywhere on October 23 after prereleases on October 16, adding Coco characters and the new ink drop mechanic.",
    "priority": false
   },
   {
    "id": "web-3",
    "source": "web",
-   "title": "Ravensburger Reveals New Details for Disney Lorcana Collector Boosters",
-   "url": "https://bleedingcool.com/collectibles/ravensburger-reveals-new-details-for-disney-lorcana-collector-boosters/",
+   "title": "Lorcana Meta Report: Core Constructed October 2026",
+   "url": "https://inkdecks.com/lorcana-metagame",
    "author": "",
    "published": null,
-   "text": "Each Collector Booster has 12 special foil cards and better odds at Enchanteds and Iconics, and 6 serialized Illustrious characters will get 23 copies each (138 worldwide), starting with Maleficent – Biding Her Time (publish date not confirmed).",
+   "text": "This Inkdecks meta report on early Hyperia City results has Emerald Steel Evasive in first place with a 23% share, followed by Amber Emerald and Amber Sapphire Princesses.",
    "priority": false
   },
   {
@@ -730,37 +800,47 @@
    "url": "https://inkdecks.com/lorcana-tournaments/quest-coast-iv-hyperia-city-tournament-decks-364364",
    "author": "",
    "published": null,
-   "text": "At an early 27-player Hyperia City event, Steel-Emerald Evasive did well, and Detectives and Princesses also made the top cut.",
+   "text": "A steel/emerald Evasive deck won this 27-player Set 14 Core event at 6-1-1, ahead of a steel/amber Lilo & Stitch deck, and steel/emerald also took 3rd.",
    "priority": false
   },
   {
    "id": "web-5",
    "source": "web",
-   "title": "Win 2 Cases - Hyperia City Core Tournament @ Il Laboratorio Giochi Lorcana Top Decks",
-   "url": "https://inkdecks.com/lorcana-tournaments/win-2-cases-hyperia-city-core-tournament-tournament-decks-364365",
+   "title": "Disney Lorcana Release & Event Calendar » Lorcana Player",
+   "url": "https://lorcanaplayer.com/lorcana-release-event-calendar/",
    "author": "",
    "published": null,
-   "text": "At this Italian Hyperia City Core event, Amber-Emerald Circle and Amber-Amethyst Merida took most of the top spots, a sign of how the new format is shaping up in Europe.",
+   "text": "This calendar listed a two-day CCQ with a $5K main event in Louisville on October 24–25 (winner gets a North American Championship invite) and the first Disney Lorcana Challenge in Asia on October 30–November 1.",
    "priority": false
   },
   {
    "id": "web-6",
    "source": "web",
-   "title": "Into the Inkdark Card List",
-   "url": "https://lorcanaplayer.com/into-the-inkdark-card-list-lorcana-set-15/",
+   "title": "Lorcana Tournament Results: 4578 Published",
+   "url": "https://inkdecks.com/lorcana-tournaments",
    "author": "",
    "published": null,
-   "text": "Lorcana Player's tracker for Set 15 reveals is live, covering the villain-themed set that brings in Onward and is due in early 2027.",
+   "text": "Inkdecks lists a French Grand Tournoi CCQ with 144 players on October 24, one of the first big qualifiers of the Hyperia City format.",
    "priority": false
   },
   {
    "id": "web-7",
    "source": "web",
-   "title": "Disney Lorcana Hyperia City Set » Lorcana Player",
-   "url": "https://lorcanaplayer.com/set/hyperia-city/",
+   "title": "Disney Lorcana Collector Boosters and a New 2027 Rarity Revealed - WDW News Today",
+   "url": "https://wdwnt.com/2026/10/disney-lorcana-collector-boosters-and-a-new-rarity-coming-in-2027-revealed/",
    "author": "",
    "published": null,
-   "text": "Hyperia City (Set 14, with Coco, the new ink drops mechanic and the Adventurous keyword) went on sale at all retailers on October 23, a week after its October 16 prerelease.",
+   "text": "From October (exact date unconfirmed): Collector Boosters will only be sold at Ravensburger Play Hub stores, the Ravensburger online store and select Disney locations, and D23 Lorcana products go on sale online October 31–November 1.",
+   "priority": false
+  },
+  {
+   "id": "web-8",
+   "source": "web",
+   "title": "Hyperia City Week 1: Which Decks Are Actually Winning?",
+   "url": "https://www.youtube.com/watch?v=iKc1CkkTKK4",
+   "author": "",
+   "published": null,
+   "text": "This first-week video looks at which decks are winning in Hyperia City and reports more than 28,000 ranked games played on Duels.ink.",
    "priority": false
   }
  ],
