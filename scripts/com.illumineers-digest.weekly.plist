@@ -10,13 +10,13 @@
     <string>/bin/bash</string>
     <string>__REPO__/scripts/publish.sh</string>
   </array>
-  <!-- Mondays at 8:00 local time. If the Mac is asleep then, it runs on wake. -->
+  <!-- Mondays at 9:00 local time. If the Mac is asleep then, it runs on wake. -->
   <key>StartCalendarInterval</key>
   <dict>
     <key>Weekday</key>
     <integer>1</integer>
     <key>Hour</key>
-    <integer>8</integer>
+    <integer>9</integer>
     <key>Minute</key>
     <integer>0</integer>
   </dict>

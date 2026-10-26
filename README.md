@@ -92,7 +92,7 @@ a home connection.
   and `site/`. Arguments go to `digest build`, so an on-demand run is
   `scripts/publish.sh --days 3`. Set `NO_PUSH=1` to commit without pushing.
 - `scripts/install-schedule.sh` installs a launchd job that runs `publish.sh`
-  every Monday at 8:00 local time. If the Mac is asleep then, the job runs when
+  every Monday at 9:00 local time. If the Mac is asleep then, the job runs when
   it wakes; if it's shut down, that week is skipped. The log is at
   `~/Library/Logs/illumineers-digest.log`. Remove it with
   `scripts/install-schedule.sh --uninstall`.

@@ -16,5 +16,5 @@ fi
 mkdir -p "$HOME/Library/LaunchAgents" "$HOME/Library/Logs"
 sed -e "s|__REPO__|$REPO|g" -e "s|__HOME__|$HOME|g" "$REPO/scripts/$LABEL.plist" > "$DEST"
 launchctl bootstrap "gui/$(id -u)" "$DEST"
-echo "Installed $LABEL: Mondays at 8:00. Log: ~/Library/Logs/illumineers-digest.log"
+echo "Installed $LABEL: Mondays at 9:00. Log: ~/Library/Logs/illumineers-digest.log"
 echo "Run it now with: launchctl kickstart gui/$(id -u)/$LABEL"
